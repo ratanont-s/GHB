@@ -1,15 +1,29 @@
 .btn-primary {
-    color: color-yiq(theme-color("dark")); // returns `color: #fff`
+  color: color-yiq(theme-color("dark")); // returns `color: #fff`
 }
 
-.card-frame {
+.card {
+  &-h-100 {
+    height: calc(100% - 1.5rem);
+    margin-bottom: 1.5rem;
+  }
+  &-frame {
     position: relative;
 
     .card-tag {
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        font-size: small;
-        padding: .25rem 1rem;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      font-size: small;
+      padding: 0.25rem 1rem;
     }
+  }
+  &-list-social {
+    background-color: rgba(#2b2b2b, 0.07);
+    padding: 0.5rem 1rem;
+    border: unset;
+    ul {
+      margin-bottom: unset;
+    }
+  }
 }
