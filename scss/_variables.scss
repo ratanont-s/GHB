@@ -1,11 +1,23 @@
 //
 // Color system
 //
-$theme-colors: (
-  "primary": #fd8103
-);
+$primary:#fd8103;
+$secondary:#E5E5E5;
+$danger:#FF0000;
 
 //
 // Links
 //
 $link-hover-decoration: none;
+
+//
+// Fonts
+//
+$font-family-base:'Prompt';
+
+//
+// Carousel
+//
+$dot-background-active:$primary;
+
+$body-color:#0F0F0F;
