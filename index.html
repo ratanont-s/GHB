@@ -12,23 +12,23 @@
 </head>
 
 <body>
-  <header>
-    <div class="navbar-top bg-primary py-1 text-white">
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            โทร. 02-645-9000
-          </div>
-          <div class="col-auto">
-            <ul class="list-inline mb-0">
-              <li class="list-inline-item">ล็อกอิน</li>
-              <li class="list-inline-item">สมัครสมาชิก</li>
-            </ul>
-          </div>
+  <div class="navbar-top bg-primary py-1 text-white">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          โทร. 02-645-9000
+        </div>
+        <div class="col-auto">
+          <ul class="list-inline mb-0">
+            <li class="list-inline-item">ล็อกอิน</li>
+            <li class="list-inline-item">สมัครสมาชิก</li>
+          </ul>
         </div>
       </div>
     </div>
-    <nav class="navbar navbar-expand-lg navbar-light container">
+  </div>
+  <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+    <div class="container">
       <a class="navbar-brand" href="#">
         <img src="./img/logo.png" alt="">
       </a>
@@ -37,12 +37,21 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="collapsibleNavId">
-        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#">บ้านมือสอง <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link" href="#">ทรัพย์โปรโมชั่น</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">ขั้นตอนการขอซื้อทรัพย์</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">ข่าว/บทความ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">ติดต่อเรา</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true"
@@ -53,13 +62,9 @@
             </div>
           </li>
         </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="text" placeholder="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
       </div>
-    </nav>
-  </header>
+    </div>
+  </nav>
   <main>
     <!-- Slide -->
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -72,16 +77,26 @@
         <div class="carousel-item active">
           <img class="d-block w-100" src="./img/slide-1.png" alt="First slide">
           <div class="carousel-caption d-none d-md-block">
-            <h1>GHB HomeCenter</h1>
+            <h1 class="display-4">GHB HomeCenter</h1>
             <h5>เว็บบ้านมือสอง ของคนออนไลน์</h5>
             <p>แหล่งขายบ้านและอสังหาริมทรัพย์ที่สมบูรณ์แบบที่สุด</p>
           </div>
         </div>
         <div class="carousel-item">
           <img class="d-block w-100" src="./img/slide-1.png" alt="Second slide">
+          <div class="carousel-caption d-none d-md-block">
+            <h1 class="display-4">GHB HomeCenter</h1>
+            <h5>เว็บบ้านมือสอง ของคนออนไลน์</h5>
+            <p>แหล่งขายบ้านและอสังหาริมทรัพย์ที่สมบูรณ์แบบที่สุด</p>
+          </div>
         </div>
         <div class="carousel-item">
           <img class="d-block w-100" src="./img/slide-1.png" alt="Third slide">
+          <div class="carousel-caption d-none d-md-block">
+            <h1 class="display-4">GHB HomeCenter</h1>
+            <h5>เว็บบ้านมือสอง ของคนออนไลน์</h5>
+            <p>แหล่งขายบ้านและอสังหาริมทรัพย์ที่สมบูรณ์แบบที่สุด</p>
+          </div>
         </div>
       </div>
       <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -96,10 +111,124 @@
     <!-- Search -->
     <div class="card card-body shadow-sm border-0">
       <div class="container">
-        Lorem non aute nostrud aliquip tempor duis voluptate ut magna. Duis Lorem labore irure Lorem. Pariatur magna
-        cillum Lorem et cupidatat proident duis. Est nostrud do culpa aliquip laborum enim adipisicing incididunt.
+        <h1>ค้นหาทรัพย์ที่คุณต้องการ</h1>
+        <form action="/" class="form-row">
+          <div class="col-lg form-group">
+            <label class="small">&nbsp;</label>
+            <input type="text" class="form-control" placeholder="ใส่คำค้นหา...">
+          </div>
+          <div class="col-lg form-group">
+            <label for="" class="small text-primary">ประเภททรัพย์</label>
+            <select class="form-control" name="" id="">
+              <option>ทั้งหมด</option>
+            </select>
+          </div>
+          <div class="col-lg form-group">
+            <label for="" class="small text-primary">ทำเลที่ตั้ง</label>
+            <select class="form-control" name="" id="">
+              <option>เลือกจังหวัด</option>
+            </select>
+          </div>
+          <div class="col-lg form-group">
+            <label for="" class="small text-primary">ช่วงราคา</label>
+            <select class="form-control" name="" id="">
+              <option>เลือกช่วงราคา</option>
+            </select>
+          </div>
+          <div class="col-lg-auto form-group">
+            <label class="small d-block">&nbsp;</label>
+            <button type="submit" class="btn btn-primary">ค้นหา</button>
+          </div>
+          <div class="w-100"></div>
+          <div class="col-lg form-group">
+            <label class="small">&nbsp;</label>
+            <select class="form-control" name="" id="">
+              <option>งานมหกรรม.......</option>
+            </select>
+          </div>
+        </form>
       </div>
     </div>
+    <!-- ทรัพย์แนะนำ  -->
+    <section class="container py-4">
+      <h1 class="text-primary">ทรัพย์แนะนำ</h1>
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="card">
+            <a href="#" class="card-frame">
+              <img src="./img/home-01.png" class="card-img-top" alt="">
+              <div class="card-tag bg-primary text-white">ทรัพย์แนะนำ</div>
+            </a>
+            <div class="card-body">
+              <div class="d-flex justify-content-between">
+                <h4 class="text-primary">15,000,000 <small>บาท</small></h4>
+                <ul class="list-inline mb-0">
+                  <li class="list-inline-item"><a href="#"><i class="fas fa-share-alt"></i></a></li>
+                  <li class="list-inline-item"><a href="#"><i class="far fa-heart"></i></a></li>
+                </ul>
+              </div>
+              <h5>ขายบ้านเดี่ยว (อมรทรัพย์)</h5>
+              <div><i class="fas fa-map-marker-alt text-primary"></i> แขวงลำผักชี เขตหนองจอก
+                กรุงเทพมหานคร</div>
+              <div class="row">
+                <div class="col-12 col-lg">
+                  <div class="row">
+                    <div class="col"><i class="fas fa-vector-square text-primary"></i> 38.9 ตร.ว.</div>
+                    <div class="col text-right text-lg-left">
+                      <ul class="list-inline mb-0">
+                        <li class="list-inline-item"><i class="fas fa-bed"></i> 4</li>
+                        <li class="list-inline-item"><i class="fas fa-bath"></i> 4</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <strong>รหัสทรัพย์ 1003105861</strong>
+                </div>
+                <div class="col-lg-auto d-none d-lg-block align-self-end">
+                  <a href="#" class="btn btn-outline-primary px-4">รายละเอียด <i class="fas fa-chevron-right"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="card">
+            <a href="#" class="card-frame">
+              <img src="./img/home-02.png" class="card-img-top" alt="">
+              <div class="card-tag bg-primary text-white">ทรัพย์แนะนำ</div>
+            </a>
+            <div class="card-body">
+              <div class="d-flex justify-content-between">
+                <h4 class="text-primary">15,000,000 <small>บาท</small></h4>
+                <ul class="list-inline mb-0">
+                  <li class="list-inline-item"><a href="#"><i class="fas fa-share-alt"></i></a></li>
+                  <li class="list-inline-item"><a href="#"><i class="far fa-heart"></i></a></li>
+                </ul>
+              </div>
+              <h5>ขายบ้านเดี่ยว (อมรทรัพย์)</h5>
+              <div><i class="fas fa-map-marker-alt text-primary"></i> แขวงลำผักชี เขตหนองจอก
+                กรุงเทพมหานคร</div>
+              <div class="row">
+                <div class="col-12 col-lg">
+                  <div class="row">
+                    <div class="col"><i class="fas fa-vector-square text-primary"></i> 38.9 ตร.ว.</div>
+                    <div class="col text-right text-lg-left">
+                      <ul class="list-inline mb-0">
+                        <li class="list-inline-item"><i class="fas fa-bed"></i> 4</li>
+                        <li class="list-inline-item"><i class="fas fa-bath"></i> 4</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <strong>รหัสทรัพย์ 1003105861</strong>
+                </div>
+                <div class="col-lg-auto d-none d-lg-block align-self-end">
+                  <a href="#" class="btn btn-outline-primary px-4">รายละเอียด <i class="fas fa-chevron-right"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
   <footer class="container">
     <div class="row">
