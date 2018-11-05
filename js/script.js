@@ -14,4 +14,8 @@ $(document).ready(function () {
       }
     }
   });
+  $('[data-toggle="popover"]').popover();
+  $('.list-share li a').popover({
+    placement: 'top'
+  });
 });

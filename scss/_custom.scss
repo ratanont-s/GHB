@@ -203,6 +203,8 @@
       &-event {
         height: calc(100% - 1.5rem);
         margin-bottom: 1.5rem;
+        border-radius: 1rem;
+        overflow: hidden;
 
         .card-img {
           height: 336px;
@@ -211,11 +213,54 @@
 
         &-hilight {
           color: $body-color;
+
+          .card {
+            &-title {
+              color: $body-color;
+            }
+
+            &-subtitle {
+              color: $primary;
+            }
+
+            &-text {
+              color: $body-color;
+              overflow: hidden;
+              display: -webkit-box;
+              -webkit-line-clamp: 4;
+              -webkit-box-orient: vertical;
+            }
+          }
+
+          &:hover {}
         }
 
         .card-img-overlay {
-          top: unset;
-          color: white;
+          display: -ms-flexbox !important;
+          display: flex !important;
+          -ms-flex-direction: column !important;
+          flex-direction: column !important;
+          -ms-flex-pack: justify !important;
+          justify-content: space-between !important;
+          background-color: rgba(black, .1);
+          @include transition($transition-base);
+
+          ul {
+            opacity: 0;
+          }
+
+          &:hover {
+            ul {
+              opacity: 1;
+            }
+
+            background-color: rgba($primary, .9);
+            @include transition($transition-base);
+          }
+
+          a {
+            color: white;
+          }
         }
       }
     }
@@ -224,4 +269,9 @@
 
 .text-shadow {
   text-shadow: .1rem .1rem .25rem rgba(black, .5);
+}
+
+.list-share {
+  margin-bottom: unset;
+  text-align: right;
 }
