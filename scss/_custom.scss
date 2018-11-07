@@ -3,10 +3,27 @@
 }
 
 .navbar {
+  @include media-breakpoint-down(md) {
+    background: transparent url("../img/bg-navbar-mobile.png") no-repeat center
+      top;
+    background-size: cover;
+    .navbar-brand {
+      margin-right: unset;
+      text-align: center;
+      img {
+        width: 60%;
+      }
+    }
+  }
+  .navbar-toggler {
+    border: unset;
+    padding: unset;
+    color: white;
+  }
   .navbar-nav {
     .nav-item {
       &:last-child .nav-link {
-        padding-right: .5rem;
+        padding-right: 0.5rem;
       }
 
       .nav-link {
@@ -43,7 +60,13 @@
 }
 
 #mainSlide {
-
+  @include media-breakpoint-down(md) {
+    .carousel-indicators,
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      display: none;
+    }
+  }
   .carousel-control-prev-icon,
   .carousel-control-next-icon {
     width: 100px;
@@ -52,12 +75,14 @@
   }
 
   .carousel-control-prev-icon {
-    background: rgba(white, .5) url('../img/icon-arrow-left.png') no-repeat center center;
+    background: rgba(white, 0.5) url("../img/icon-arrow-left.png") no-repeat
+      center center;
     background-size: auto 60%;
   }
 
   .carousel-control-next-icon {
-    background: rgba(white, .5) url('../img/icon-arrow-right.png') no-repeat center center;
+    background: rgba(white, 0.5) url("../img/icon-arrow-right.png") no-repeat
+      center center;
     background-size: auto 60%;
   }
 }
@@ -84,9 +109,8 @@
     }
 
     &:hover {
-
       img {
-        opacity: .75;
+        opacity: 0.75;
         -moz-transform: scale(1.1) rotate(2deg);
         -webkit-transform: scale(1.1) rotate(2deg);
         -o-transform: scale(1.1) rotate(2deg);
@@ -123,7 +147,6 @@
       margin-bottom: unset;
     }
   }
-
 
   &-news {
     height: calc(100% - 1.5rem);
@@ -162,7 +185,8 @@
 }
 
 .nav-bottom {
-  background: transparent url('../img/bg-nav-bottom.png') no-repeat center center;
+  background: transparent url("../img/bg-nav-bottom.png") no-repeat center
+    center;
   background-size: cover;
   text-align: center;
   padding: 6rem 0;
@@ -199,7 +223,6 @@
     background-color: $light;
 
     .card {
-
       &-event {
         height: calc(100% - 1.5rem);
         margin-bottom: 1.5rem;
@@ -232,7 +255,8 @@
             }
           }
 
-          &:hover {}
+          &:hover {
+          }
         }
 
         .card-img-overlay {
@@ -242,7 +266,7 @@
           flex-direction: column !important;
           -ms-flex-pack: justify !important;
           justify-content: space-between !important;
-          background-color: rgba(black, .1);
+          background-color: rgba(black, 0.1);
           @include transition($transition-base);
 
           ul {
@@ -254,7 +278,7 @@
               opacity: 1;
             }
 
-            background-color: rgba($primary, .9);
+            background-color: rgba($primary, 0.9);
             @include transition($transition-base);
           }
 
@@ -268,7 +292,7 @@
 }
 
 .text-shadow {
-  text-shadow: .1rem .1rem .25rem rgba(black, .5);
+  text-shadow: 0.1rem 0.1rem 0.25rem rgba(black, 0.5);
 }
 
 .list-share {

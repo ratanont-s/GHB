@@ -12,7 +12,7 @@
 </head>
 
 <body>
-  <div class="navbar-top">
+  <div class="navbar-top d-none d-lg-block">
     <div class="container">
       <div class="row">
         <div class="col">
@@ -29,13 +29,14 @@
   </div>
   <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
     <div class="container">
+      <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+        aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
       <a class="navbar-brand" href="#">
         <img src="./img/logo.png" alt="">
       </a>
-      <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
-        aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+      <a href="#" class="d-lg-none"><img src="./img/user.png" alt=""></a>
       <div class="collapse navbar-collapse" id="collapsibleNavId">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
@@ -53,7 +54,7 @@
           <li class="nav-item">
             <a class="nav-link" href="#">ติดต่อเรา</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item d-none d-lg-block">
             <a class="nav-link text-primary" href="#"><i class="fas fa-user fa-lg"></i></a>
           </li>
           <!-- <li class="nav-item dropdown">
@@ -582,13 +583,13 @@
             <h1 class="text-white text-shadow">Smart NPA Mobile Application</h1>
             <h1 class="text-primary font-weight-light">ครบทุกความต้องการในมือคุณ</h1>
             <h3>ดาวน์โหลดฟรี</h3>
-            <div class="row">
-              <div class="col-12 col-sm-auto">
+            <div class="row mb-4">
+              <div class="col-6">
                 <a href="#">
                   <img src="./img/appstore.png" class="img-fluid" alt="">
                 </a>
               </div>
-              <div class="col-12 col-sm-auto">
+              <div class="col-6">
                 <a href="#">
                   <img src="./img/googleplay.png" class="img-fluid" alt="">
                 </a>
@@ -602,7 +603,7 @@
       </div>
     </section>
     <!-- Nav bottom -->
-    <section class="nav-bottom">
+    <section class="nav-bottom d-none d-lg-block">
       <div class="container">
         <div class="row">
           <div class="col-lg-4">
@@ -633,59 +634,109 @@
     </section>
   </main>
   <footer class="bg-light">
-    <div class="container py-5">
+    <div class="container py-2 py-lg-5">
       <div class="row">
         <div class="col-12 col-lg-3">
-          <h6>ประเภททรัพย์</h6>
-          <ul class="list-unstyled">
-            <li><a href="#">ขายบ้านเดี่ยว</a></li>
-            <li><a href="#">ขายบ้านแฝด</a></li>
-            <li><a href="#">ขายทาวน์เฮ้าส์</a></li>
-            <li><a href="#">ขายคอนโด</a></li>
-            <li><a href="#">ขายอาคารพาณิชย์</a></li>
-            <li><a href="#">ขายที่ดิน</a></li>
-            <li><a href="#">ขายแฟลต</a></li>
-          </ul>
+          <div class="d-none d-lg-block">
+            <h6>ประเภททรัพย์</h6>
+            <ul class="list-unstyled">
+              <li><a href="#">ขายบ้านเดี่ยว</a></li>
+              <li><a href="#">ขายบ้านแฝด</a></li>
+              <li><a href="#">ขายทาวน์เฮ้าส์</a></li>
+              <li><a href="#">ขายคอนโด</a></li>
+              <li><a href="#">ขายอาคารพาณิชย์</a></li>
+              <li><a href="#">ขายที่ดิน</a></li>
+              <li><a href="#">ขายแฟลต</a></li>
+            </ul>
+          </div>
+          <div class="form-group d-lg-none">
+            <select class="form-control">
+              <option value="">ประเภททรัพย์</option>
+              <option value="">ขายบ้านเดี่ยว</option>
+              <option value="">ขายบ้านแฝด</option>
+              <option value="">ขายทาวน์เฮ้าส์</option>
+              <option value="">ขายคอนโด</option>
+              <option value="">ขายอาคารพาณิชย์</option>
+              <option value="">ขายที่ดิน</option>
+              <option value="">ขายแฟลต</option>
+            </select>
+          </div>
         </div>
         <div class="col-12 col-lg-3">
-          <h6>ทำเลที่น่าสนใจในกรุงเทพ</h6>
-          <ul class="list-unstyled">
-            <li><a href="#">ดุสิต</a></li>
-            <li><a href="#">บางกอกใหญ่</a></li>
-            <li><a href="#">สวนหลวง</a></li>
-            <li><a href="#">บางขุนเทียน</a></li>
-            <li><a href="#">ลาดกระบัง</a></li>
-            <li><a href="#">บึงกุ่ม</a></li>
-            <li><a href="#">ดอนเมือง</a></li>
-            <li><a href="#">คันนายาว</a></li>
-          </ul>
+          <div class="d-none d-lg-block">
+            <h6>ทำเลที่น่าสนใจในกรุงเทพ</h6>
+            <ul class="list-unstyled">
+              <li><a href="#">ดุสิต</a></li>
+              <li><a href="#">บางกอกใหญ่</a></li>
+              <li><a href="#">สวนหลวง</a></li>
+              <li><a href="#">บางขุนเทียน</a></li>
+              <li><a href="#">ลาดกระบัง</a></li>
+              <li><a href="#">บึงกุ่ม</a></li>
+              <li><a href="#">ดอนเมือง</a></li>
+              <li><a href="#">คันนายาว</a></li>
+            </ul>
+          </div>
+          <div class="form-group d-lg-none">
+            <select class="form-control">
+              <option value="">ทำเลที่น่าสนใจในกรุงเทพ</option>
+              <option value="">ดุสิต</option>
+              <option value="">บางกอกใหญ่</option>
+              <option value="">สวนหลวง</option>
+              <option value="">บางขุนเทียน</option>
+              <option value="">ลาดกระบัง</option>
+              <option value="">บึงกุ่ม</option>
+              <option value="">ดอนเมือง</option>
+              <option value="">คันนายาว</option>
+            </select>
+          </div>
         </div>
         <div class="col-12 col-lg-3">
-          <h6>ทำเลที่น่าสนใจในต่างจังหวัด</h6>
-          <ul class="list-unstyled">
-            <li><a href="#">ประจวบคีรีขันธ์</a></li>
-            <li><a href="#">นครนายก</a></li>
-            <li><a href="#">ฉะเชิงเทรา</a></li>
-            <li><a href="#">เชียงใหม่</a></li>
-            <li><a href="#">เพชรบุรี</a></li>
-            <li><a href="#">ลำพูน</a></li>
-            <li><a href="#">ปทุมธานี</a></li>
-            <li><a href="#">สระบุรี</a></li>
-          </ul>
+          <div class="d-none d-lg-block">
+            <h6>ทำเลที่น่าสนใจในต่างจังหวัด</h6>
+            <ul class="list-unstyled">
+              <li><a href="#">ประจวบคีรีขันธ์</a></li>
+              <li><a href="#">นครนายก</a></li>
+              <li><a href="#">ฉะเชิงเทรา</a></li>
+              <li><a href="#">เชียงใหม่</a></li>
+              <li><a href="#">เพชรบุรี</a></li>
+              <li><a href="#">ลำพูน</a></li>
+              <li><a href="#">ปทุมธานี</a></li>
+              <li><a href="#">สระบุรี</a></li>
+            </ul>
+          </div>
+          <div class="form-group d-lg-none">
+            <select class="form-control">
+              <option value="">ทำเลที่น่าสนใจในต่างจังหวัด</option>
+              <option value="">ประจวบคีรีขันธ์</option>
+              <option value="">นครนายก</option>
+              <option value="">ฉะเชิงเทรา</option>
+              <option value="">เชียงใหม่</option>
+              <option value="">เพชรบุรี</option>
+              <option value="">ลำพูน</option>
+              <option value="">ปทุมธานี</option>
+              <option value="">สระบุรี</option>
+            </select>
+          </div>
         </div>
         <div class="col-12 col-lg-3">
-          <h6>Follow us</h6>
-          <ul class="list-inline mb-5">
-            <li class="list-inline-item"><a href="#" class="btn btn-secondary btn-sm"><i class="fab fa-facebook"></i></a></li>
-            <li class="list-inline-item"><a href="#" class="btn btn-secondary btn-sm"><i class="fab fa-twitter"></i></a></li>
-            <li class="list-inline-item"><a href="#" class="btn btn-secondary btn-sm"><i class="fab fa-instagram"></i></a></li>
-            <li class="list-inline-item"><a href="#" class="btn btn-secondary btn-sm"><i class="fab fa-youtube"></i></a></li>
-          </ul>
-          <h6>App iOS/Andriod</h6>
-          <ul class="list-unstyled">
-            <li><a href="#" target="_blank"><img src="./img/appstore.png" class="img-fluid mb-2" alt=""></a></li>
-            <li><a href="#" target="_blank"><img src="./img/googleplay.png" class="img-fluid" alt=""></a></li>
-          </ul>
+          <div class="row">
+            <div class="col-6 col-lg-12">
+              <h6>Follow us</h6>
+              <ul class="list-inline mb-5">
+                <li class="list-inline-item"><a href="#" class="btn btn-secondary btn-sm"><i class="fab fa-facebook"></i></a></li>
+                <li class="list-inline-item"><a href="#" class="btn btn-secondary btn-sm"><i class="fab fa-twitter"></i></a></li>
+                <li class="list-inline-item"><a href="#" class="btn btn-secondary btn-sm"><i class="fab fa-instagram"></i></a></li>
+                <li class="list-inline-item"><a href="#" class="btn btn-secondary btn-sm"><i class="fab fa-youtube"></i></a></li>
+              </ul>
+            </div>
+            <div class="col-6 col-lg-12">
+              <h6>App iOS/Andriod</h6>
+              <ul class="list-unstyled">
+                <li><a href="#" target="_blank"><img src="./img/appstore.png" class="img-fluid mb-2" alt=""></a></li>
+                <li><a href="#" target="_blank"><img src="./img/googleplay.png" class="img-fluid" alt=""></a></li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </div>
