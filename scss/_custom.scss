@@ -26,8 +26,7 @@ html {
 
 header {
   @include media-breakpoint-down(lg) {
-    background: transparent url("../img/bg-navbar-mobile.png") no-repeat center
-      top;
+    background: transparent url("../img/bg-navbar-mobile.png") no-repeat center top;
     background-size: cover;
   }
 
@@ -115,7 +114,9 @@ header {
 
 #mainSlide {
   z-index: 1;
+
   @include media-breakpoint-down(md) {
+
     .carousel-indicators,
     .carousel-control-prev-icon,
     .carousel-control-next-icon {
@@ -131,14 +132,12 @@ header {
   }
 
   .carousel-control-prev-icon {
-    background: rgba(white, 0.5) url("../img/icon-arrow-left.png") no-repeat
-      center center;
+    background: rgba(white, 0.5) url("../img/icon-arrow-left.png") no-repeat center center;
     background-size: auto 60%;
   }
 
   .carousel-control-next-icon {
-    background: rgba(white, 0.5) url("../img/icon-arrow-right.png") no-repeat
-      center center;
+    background: rgba(white, 0.5) url("../img/icon-arrow-right.png") no-repeat center center;
     background-size: auto 60%;
   }
 }
@@ -203,8 +202,7 @@ header {
 }
 
 .nav-bottom {
-  background: transparent url("../img/bg-nav-bottom.png") no-repeat center
-    center;
+  background: transparent url("../img/bg-nav-bottom.png") no-repeat center center;
   background-size: cover;
   text-align: center;
   padding: 6rem 0;
@@ -281,8 +279,7 @@ header {
             }
           }
 
-          &:hover {
-          }
+          &:hover {}
         }
 
         .card-img-overlay {
@@ -406,6 +403,90 @@ header {
     //     background-size: contain;
     //   }
     // }
+  }
+
+  &-banner {
+    img {
+      width: 100%;
+    }
+  }
+
+  &-promotion {
+    .card {
+      height: calc(100% - 1.5rem);
+      margin-bottom: 1.5rem;
+
+      &-img {
+        height: 330px;
+        -o-object-fit: cover;
+        object-fit: cover;
+
+        &-overlay {
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          -ms-flex-pack: justify;
+          justify-content: space-between;
+        }
+      }
+
+      &-detail {
+        margin: 0 -1.25rem -1.25rem;
+        padding: 1.25rem;
+        background-color: rgba($primary, .8);
+      }
+
+      &-subtitle {
+        margin-bottom: .5rem;
+        color: $dark;
+      }
+
+      &-title {
+        margin-bottom: 0;
+        color: white;
+      }
+
+      &-hilight {
+        .card {
+          &-img {
+
+            &-overlay {
+              padding: 2rem;
+              display: unset;
+              display: unset;
+              -ms-flex-direction: unset;
+              flex-direction: unset;
+              -ms-flex-pack: unset;
+              justify-content: unset;
+            }
+          }
+
+          &-detail {
+            background-color: rgba(white, .8);
+            padding: 1rem 1.5rem;
+            margin: unset;
+            height: 100%;
+          }
+
+
+          &-title {
+            color: $primary;
+          }
+
+          &-list {
+            padding-left: 0;
+            list-style: none;
+            margin-bottom: 0;
+
+            i {
+              color: $primary;
+              min-width: 1rem;
+            }
+          }
+        }
+      }
+    }
   }
 }
 
