@@ -1,16 +1,16 @@
 html {
-  font-size: .85rem;
+  font-size: 0.85rem;
 }
 
 @include media-breakpoint-up(sm) {
   html {
-    font-size: .9rem;
+    font-size: 0.9rem;
   }
 }
 
 @include media-breakpoint-up(md) {
   html {
-    font-size: .95rem;
+    font-size: 0.95rem;
   }
 }
 
@@ -25,9 +25,9 @@ html {
 }
 
 header {
-
   @include media-breakpoint-down(lg) {
-    background: transparent url("../img/bg-navbar-mobile.png") no-repeat center top;
+    background: transparent url("../img/bg-navbar-mobile.png") no-repeat center
+      top;
     background-size: cover;
   }
 
@@ -36,6 +36,7 @@ header {
     bottom: -1.5rem;
     left: 0;
     right: 0;
+    z-index: $zindex-fixed;
 
     .btn {
       background-color: $input-bg;
@@ -49,7 +50,6 @@ header {
 
 .navbar {
   @include media-breakpoint-down(lg) {
-
     .navbar-brand {
       margin-right: unset;
       text-align: center;
@@ -114,8 +114,8 @@ header {
 }
 
 #mainSlide {
+  z-index: 1;
   @include media-breakpoint-down(md) {
-
     .carousel-indicators,
     .carousel-control-prev-icon,
     .carousel-control-next-icon {
@@ -131,12 +131,14 @@ header {
   }
 
   .carousel-control-prev-icon {
-    background: rgba(white, 0.5) url("../img/icon-arrow-left.png") no-repeat center center;
+    background: rgba(white, 0.5) url("../img/icon-arrow-left.png") no-repeat
+      center center;
     background-size: auto 60%;
   }
 
   .carousel-control-next-icon {
-    background: rgba(white, 0.5) url("../img/icon-arrow-right.png") no-repeat center center;
+    background: rgba(white, 0.5) url("../img/icon-arrow-right.png") no-repeat
+      center center;
     background-size: auto 60%;
   }
 }
@@ -191,7 +193,6 @@ header {
       padding: 0.25rem 1rem;
     }
   }
-
 }
 
 .block-with-text {
@@ -202,7 +203,8 @@ header {
 }
 
 .nav-bottom {
-  background: transparent url("../img/bg-nav-bottom.png") no-repeat center center;
+  background: transparent url("../img/bg-nav-bottom.png") no-repeat center
+    center;
   background-size: cover;
   text-align: center;
   padding: 6rem 0;
@@ -279,7 +281,8 @@ header {
             }
           }
 
-          &:hover {}
+          &:hover {
+          }
         }
 
         .card-img-overlay {
@@ -323,7 +326,6 @@ header {
   }
 
   &-news {
-
     .card {
       height: calc(100% - 1.5rem);
       margin-bottom: 1.5rem;
@@ -362,7 +364,6 @@ header {
         -webkit-box-orient: vertical;
       }
 
-
       &-hilight {
         background-color: $primary;
 
@@ -370,23 +371,19 @@ header {
           color: white;
 
           @include hover-focus {
-            opacity: .8;
+            opacity: 0.8;
           }
         }
 
         .card {
-
           &-img {
             height: 360px;
             object-fit: cover;
           }
 
-
-
           &-title,
           &-text,
-          &-date,
-            {
+          &-date {
             color: white;
           }
 
@@ -402,12 +399,13 @@ header {
   }
 
   &-download {
-    .section-body {
-      @include media-breakpoint-down(md) {
-        background: transparent url('../img/mobileapp_pic.png') no-repeat right top;
-        background-size: contain;
-      }
-    }
+    // .section-body {
+    //   @include media-breakpoint-down(md) {
+    //     background: transparent url("../img/mobileapp_pic.png") no-repeat right
+    //       top;
+    //     background-size: contain;
+    //   }
+    // }
   }
 }
 
@@ -428,10 +426,10 @@ footer {
     @include media-breakpoint-down(md) {
       ul {
         li {
-          font-size: .4375rem;
+          font-size: 0.4375rem;
 
           &:first-child {
-            font-size: .625rem;
+            font-size: 0.625rem;
           }
         }
       }
@@ -440,7 +438,7 @@ footer {
 }
 
 .popover-social {
-  background-color: #ECECEC;
+  background-color: #ececec;
   padding: 0.5rem 1rem;
   border: unset;
 
@@ -450,7 +448,7 @@ footer {
     }
 
     &::after {
-      border-top-color: #ECECEC;
+      border-top-color: #ececec;
     }
   }
 
