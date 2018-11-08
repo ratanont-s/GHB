@@ -278,8 +278,6 @@ header {
               -webkit-box-orient: vertical;
             }
           }
-
-          &:hover {}
         }
 
         .card-img-overlay {
@@ -395,15 +393,6 @@ header {
     }
   }
 
-  &-download {
-    // .section-body {
-    //   @include media-breakpoint-down(md) {
-    //     background: transparent url("../img/mobileapp_pic.png") no-repeat right
-    //       top;
-    //     background-size: contain;
-    //   }
-    // }
-  }
 
   &-banner {
     img {
