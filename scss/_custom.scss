@@ -1,20 +1,26 @@
 html {
-  font-size: 0.85rem;
+  font-size: 0.6rem;
 }
 
 @include media-breakpoint-up(sm) {
   html {
-    font-size: 0.9rem;
+    font-size: 0.7rem;
   }
 }
 
 @include media-breakpoint-up(md) {
   html {
-    font-size: 0.95rem;
+    font-size: 0.8rem;
   }
 }
 
 @include media-breakpoint-up(lg) {
+  html {
+    font-size: .9rem;
+  }
+}
+
+@include media-breakpoint-up(xl) {
   html {
     font-size: 1rem;
   }
@@ -24,11 +30,20 @@ html {
   color: color-yiq(theme-color("dark")); // returns `color: #fff`
 }
 
-header {
+.header {
+  background: white;
+
   @include media-breakpoint-down(lg) {
-    background: transparent url("../img/bg-navbar-mobile.png") no-repeat center top;
-    background-size: cover;
+    background: $primary;
   }
+
+  &-index {
+    @include media-breakpoint-down(lg) {
+      background: transparent url("../img/bg-navbar-mobile.png") no-repeat center top;
+      background-size: cover;
+    }
+  }
+
 
   .form-search-mobile {
     position: absolute;
@@ -404,6 +419,7 @@ header {
     .card {
       height: calc(100% - 1.5rem);
       margin-bottom: 1.5rem;
+      overflow: hidden;
 
       &-img {
         height: 330px;
@@ -424,6 +440,12 @@ header {
         margin: 0 -1.25rem -1.25rem;
         padding: 1.25rem;
         background-color: rgba($primary, .8);
+        @include transition($transition-base);
+
+        @include hover-focus {
+          padding-bottom: 50%;
+          @include transition($transition-base);
+        }
       }
 
       &-subtitle {
@@ -451,28 +473,49 @@ header {
             }
           }
 
-          &-detail {
-            background-color: rgba(white, .8);
-            padding: 1rem 1.5rem;
-            margin: unset;
-            height: 100%;
-          }
-
-
           &-title {
             color: $primary;
+          }
+
+          &-text {
+            color: $body-color;
           }
 
           &-list {
             padding-left: 0;
             list-style: none;
             margin-bottom: 0;
+            color: $body-color;
 
             i {
               color: $primary;
               min-width: 1rem;
             }
           }
+
+          &-detail {
+            background-color: rgba(white, .8);
+            padding: 1rem 1.5rem;
+            margin: unset;
+            height: 100%;
+            display: block;
+
+            @include hover-focus {
+              background-color: rgba($primary, .8);
+              @include transition($transition-base);
+
+              .card {
+
+                &-title,
+                &-list i {
+                  color: white;
+                }
+              }
+            }
+          }
+
+
+
         }
       }
     }
@@ -546,5 +589,27 @@ footer {
         color: #55acee;
       }
     }
+  }
+}
+
+.page-link {
+  border-bottom: .25rem solid darken($primary, 10%);
+}
+
+.page-item {
+  &:first-child {
+    .page-link {
+      @include border-left-radius(0);
+    }
+  }
+
+  &:last-child {
+    .page-link {
+      @include border-right-radius(0);
+    }
+  }
+
+  &.disabled .page-link {
+    border-bottom: .25rem solid darken(#B1B1B1, 10%);
   }
 }

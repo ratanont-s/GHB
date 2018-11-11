@@ -30,7 +30,7 @@
             </div>
         </div>
     </div>
-    <header class="bg-white sticky-top shadow-sm">
+    <header class="header sticky-top shadow-sm">
         <nav class="navbar navbar-expand-xl navbar-light">
             <div class="container">
                 <button class="navbar-toggler hidden-xl-up" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
@@ -38,7 +38,8 @@
                     <i class="fas fa-bars"></i>
                 </button>
                 <a class="navbar-brand" href="./">
-                    <img src="./img/logo.png" alt="">
+                    <img src="./img/logo.png" alt="" class="d-none d-xl-block">
+                    <img src="./img/logo-white.png" alt="" class="d-xl-none">
                 </a>
                 <a href="#" class="d-xl-none"><img src="./img/user.png" alt="" class="img-user"></a>
                 <div class="collapse navbar-collapse" id="collapsibleNavId">
@@ -65,17 +66,6 @@
                 </div>
             </div>
         </nav>
-        <div class="d-xl-none container position-relative pb-4">
-            <h4 class="font-weight-light text-center text-white">GHB HomeCenter</h4>
-            <form class="form-search-mobile px-3">
-                <div class="input-group input-group-lg shadow">
-                    <input type="text" class="form-control" name="" id="" placeholder="สะพานควาย , จตุจักร , กรุงเทพ">
-                    <div class="input-group-append">
-                        <button class="btn" type="submit"><i class="fas fa-search"></i></button>
-                    </div>
-                </div>
-            </form>
-        </div>
     </header>
     <main>
         <!-- Banner -->
@@ -85,6 +75,11 @@
         <section class="section-promotion container py-5">
             <div class="text-center text-xl-left mb-5">
                 <h1 class="text-primary">โปรโมชั่นงานมหกรรมบ้านธนาคาร</h1>
+                <form class="d-lg-none form-group">
+                    <select name="" id="" class="form-control form-control-lg">
+                        <option value="">งานมหกรรมบ้านดี จังหวัดระยอง ปี 2561</option>
+                    </select>
+                </form>
                 <h3>ทรัพย์ราคาพิเศษเฉพาะงานมหกรรมบ้านธนาคาร</h3>
             </div>
             <div class="row">
@@ -92,17 +87,21 @@
                     <div class="card card-hilight">
                         <img src="./img/news-04.png" class="card-img" alt="">
                         <div class="card-img-overlay">
-                            <a href="javascript:(0);" class="link-share float-right"><i class="fas fa-share-alt fa-lg"></i></a>
-                            <div class="card-detail col-12 col-xl-7">
-                                <h5 class="card-subtitle">27 ก.ย. - 3 ต.ค. 2561</h5>
-                                <h4 class="card-title">โปรโมชั่นงานมหกรรมบ้านดี จังหวัดระยอง ปี 2561</h4>
-                                <p class="card-text">ราคาพิเศษเฉพาะงาน “มหกรรมบ้านดี” จังหวัดระยอง ปี 2561
-                                    จัดระหว่างวันที่ 27 กันยายน - 3 ตุลาคม 2561 </p>
-                                <ul class="card-list">
-                                    <li><i class="fas fa-map-marker-alt"></i> ณ ศูนย์การค้าเซ็นทรัลพลาซ่า
-                                        เชียงใหม่</li>
-                                    <li><i class="fas fa-clock"></i> เวลา 10.00 - 20.00 น. </li>
-                                </ul>
+                            <div class="text-right">
+                                <a href="javascript:(0);" class="link-share float-xl-right"><i class="fas fa-share-alt fa-lg"></i></a>
+                            </div>
+                            <div class="col-12 col-xl-7">
+                                <a href="#" class="card-detail">
+                                    <h5 class="card-subtitle">27 ก.ย. - 3 ต.ค. 2561</h5>
+                                    <h4 class="card-title">โปรโมชั่นงานมหกรรมบ้านดี จังหวัดระยอง ปี 2561</h4>
+                                    <p class="card-text">ราคาพิเศษเฉพาะงาน “มหกรรมบ้านดี” จังหวัดระยอง ปี 2561
+                                        จัดระหว่างวันที่ 27 กันยายน - 3 ตุลาคม 2561 </p>
+                                    <ul class="card-list">
+                                        <li><i class="fas fa-map-marker-alt"></i> ณ ศูนย์การค้าเซ็นทรัลพลาซ่า
+                                            เชียงใหม่</li>
+                                        <li><i class="fas fa-clock"></i> เวลา 10.00 - 20.00 น. </li>
+                                    </ul>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -112,14 +111,58 @@
                         <img src="./img/philipp-berndt-173197-unsplash.png" class="card-img" alt="">
                         <div class="card-img-overlay">
                             <a href="javascript:(0);" class="link-share align-self-end"><i class="fas fa-share-alt fa-lg"></i></a>
-                            <div class="card-detail">
+                            <a href="#" class="card-detail">
                                 <h5 class="card-subtitle">27 ก.ย. - 3 ต.ค. 2561</h5>
                                 <h4 class="card-title">โปรโมชั่นงานมหกรรมบ้านดี จังหวัดระยอง ปี 2561</h4>
-                            </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 col-xl-4">
+                    <div class="card">
+                        <img src="./img/rawpixel-1053187-unsplash.png" class=" card-img" alt="">
+                        <div class="card-img-overlay">
+                            <a href="javascript:(0);" class="link-share align-self-end"><i class="fas fa-share-alt fa-lg"></i></a>
+                            <a href="#" class="card-detail">
+                                <h5 class="card-subtitle">27 ก.ย. - 3 ต.ค. 2561</h5>
+                                <h4 class="card-title">โปรโมชั่นงานมหกรรมบ้านดี จังหวัดระยอง ปี 2561</h4>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 col-xl-4">
+                    <div class="card">
+                        <img src="./img/event-04.png" class="card-img" alt="">
+                        <div class="card-img-overlay">
+                            <a href="javascript:(0);" class="link-share align-self-end"><i class="fas fa-share-alt fa-lg"></i></a>
+                            <a href="#" class="card-detail">
+                                <h5 class="card-subtitle">27 ก.ย. - 3 ต.ค. 2561</h5>
+                                <h4 class="card-title">โปรโมชั่นงานมหกรรมบ้านดี จังหวัดระยอง ปี 2561</h4>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 col-xl-4">
+                    <div class="card">
+                        <img src="./img/OCIFGU0.png" class="card-img" alt="">
+                        <div class="card-img-overlay">
+                            <a href="javascript:(0);" class="link-share align-self-end"><i class="fas fa-share-alt fa-lg"></i></a>
+                            <a href="#" class="card-detail">
+                                <h5 class="card-subtitle">27 ก.ย. - 3 ต.ค. 2561</h5>
+                                <h4 class="card-title">โปรโมชั่นงานมหกรรมบ้านดี จังหวัดระยอง ปี 2561</h4>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- Pagination -->
+            <nav aria-label="Page navigation example">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item disabled mr-4"><a class="page-link" href="#"><i class="fas fa-chevron-left"></i>
+                            ย้อนกลับ</a></li>
+                    <li class="page-item"><a class="page-link" href="#">หน้าถัดไป <i class="fas fa-chevron-right"></i></a></li>
+                </ul>
+            </nav>
         </section>
         <!-- Nav bottom -->
         <section class="nav-bottom d-none d-lg-block">

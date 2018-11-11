@@ -21,3 +21,16 @@ $font-family-base:'Prompt';
 $dot-background-active:$primary;
 
 $body-color:#0F0F0F;
+
+//
+// Pagination
+//
+$pagination-border-color: $primary;
+$pagination-hover-border-color:darken($primary, 10%);
+$pagination-disabled-border-color: #B1B1B1;
+$pagination-bg: $primary;
+$pagination-hover-bg: darken($primary, 10%);
+$pagination-color: white;
+$pagination-hover-color: white;
+$pagination-disabled-bg: #B1B1B1;
+$pagination-disabled-color:white;
