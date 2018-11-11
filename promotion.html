@@ -33,7 +33,7 @@
     <header class="header sticky-top shadow-sm">
         <nav class="navbar navbar-expand-xl navbar-light">
             <div class="container">
-                <button class="navbar-toggler hidden-xl-up" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+                <button class="navbar-toggler hidden-xl-up" type="button" data-toggle="offcanvas" data-target="#collapsibleNavId"
                     aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fas fa-bars"></i>
                 </button>
@@ -42,7 +42,18 @@
                     <img src="./img/logo-white.png" alt="" class="d-xl-none">
                 </a>
                 <a href="#" class="d-xl-none"><img src="./img/user.png" alt="" class="img-user"></a>
-                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <div class="offcanvas-collapse navbar-collapse" id="collapsibleNavId">
+                    <div class="offcanvas-header">
+                        <button class="navbar-toggler float-right" type="button" data-toggle="offcanvas" data-target="#collapsibleNavId"
+                            aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="fas fa-times"></i>
+                        </button>
+                        <div class="container-fluid">
+                            <div class="text-center">
+                                <img src="./img/logo-white.png" class="img-fluid" alt="">
+                            </div>
+                        </div>
+                    </div>
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item ">
                             <a class="nav-link" href="./">บ้านมือสอง <span class="sr-only">(current)</span></a>
@@ -158,9 +169,9 @@
             <!-- Pagination -->
             <nav aria-label="Page navigation example">
                 <ul class="pagination justify-content-center">
-                    <li class="page-item disabled mr-4"><a class="page-link" href="#"><i class="fas fa-chevron-left"></i>
+                    <li class="page-item page-item-prev disabled mr-4"><a class="page-link" href="#"><i class="fas fa-chevron-left"></i>
                             ย้อนกลับ</a></li>
-                    <li class="page-item"><a class="page-link" href="#">หน้าถัดไป <i class="fas fa-chevron-right"></i></a></li>
+                    <li class="page-item page-item-next"><a class="page-link " href="#">หน้าถัดไป <i class="fas fa-chevron-right"></i></a></li>
                 </ul>
             </nav>
         </section>

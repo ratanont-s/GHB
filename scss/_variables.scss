@@ -25,12 +25,14 @@ $body-color:#0F0F0F;
 //
 // Pagination
 //
-$pagination-border-color: $primary;
-$pagination-hover-border-color:darken($primary, 10%);
-$pagination-disabled-border-color: #B1B1B1;
-$pagination-bg: $primary;
+$pagination-bg: #EDEDED;
+$pagination-color: #757575;
+$pagination-border-color: #EDEDED;
+
 $pagination-hover-bg: darken($primary, 10%);
-$pagination-color: white;
 $pagination-hover-color: white;
+$pagination-hover-border-color:darken($primary, 10%);
+
 $pagination-disabled-bg: #B1B1B1;
 $pagination-disabled-color:white;
+$pagination-disabled-border-color: #B1B1B1;
