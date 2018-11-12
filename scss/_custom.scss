@@ -38,8 +38,7 @@ html {
 
   &-index {
     @include media-breakpoint-down(lg) {
-      background: transparent url("../img/bg-navbar-mobile.png") no-repeat
-        center top;
+      background: transparent url("../img/bg-navbar-mobile.png") no-repeat center top;
       background-size: cover;
     }
   }
@@ -130,6 +129,7 @@ html {
   z-index: 1;
 
   @include media-breakpoint-down(md) {
+
     .carousel-indicators,
     .carousel-control-prev-icon,
     .carousel-control-next-icon {
@@ -145,21 +145,19 @@ html {
   }
 
   .carousel-control-prev-icon {
-    background: rgba(white, 0.5) url("../img/icon-arrow-left.png") no-repeat
-      center center;
+    background: rgba(white, 0.5) url("../img/icon-arrow-left.png") no-repeat center center;
     background-size: auto 60%;
   }
 
   .carousel-control-next-icon {
-    background: rgba(white, 0.5) url("../img/icon-arrow-right.png") no-repeat
-      center center;
+    background: rgba(white, 0.5) url("../img/icon-arrow-right.png") no-repeat center center;
     background-size: auto 60%;
   }
 }
 
 .card {
   box-shadow: $box-shadow-sm;
-  border: unset;
+  border-color: #eee;
   @include transition($transition-base);
 
   &:hover {
@@ -171,6 +169,7 @@ html {
     overflow: hidden;
     position: relative;
     background-color: $primary;
+    background-clip: padding-box;
 
     img {
       height: 100%;
@@ -217,8 +216,7 @@ html {
 }
 
 .nav-bottom {
-  background: transparent url("../img/bg-nav-bottom.png") no-repeat center
-    center;
+  background: transparent url("../img/bg-nav-bottom.png") no-repeat center center;
   background-size: cover;
   text-align: center;
   padding: 6rem 0;
@@ -249,6 +247,36 @@ html {
     .card {
       height: calc(100% - 1.5rem);
       margin-bottom: 1.5rem;
+
+      &-img-top {
+        border-radius: unset;
+      }
+
+      p {
+        margin-bottom: .25rem;
+      }
+
+      @include media-breakpoint-down(xs) {
+        .card-tag {
+          font-size: 7px;
+        }
+
+        .card-body {
+          padding: 1rem .5rem;
+        }
+
+        h4 {
+          font-size: 17px;
+        }
+
+        h5 {
+          font-size: 12px;
+        }
+
+        p {
+          font-size: 8px;
+        }
+      }
     }
   }
 
@@ -256,6 +284,10 @@ html {
     .card {
       height: calc(100% - 1.5rem);
       margin-bottom: 1.5rem;
+
+      &-img-top {
+        border-radius: unset;
+      }
     }
   }
 
@@ -266,11 +298,11 @@ html {
       &-event {
         height: calc(100% - 1.5rem);
         margin-bottom: 1.5rem;
-        border-radius: 1rem;
+        border-radius: .5rem;
         overflow: hidden;
 
         .card-img {
-          height: 336px;
+          // height: 336px;
           object-fit: cover;
         }
 
@@ -278,6 +310,10 @@ html {
           color: $body-color;
 
           .card {
+            &-img {
+              border-radius: .5rem
+            }
+
             &-title {
               color: $body-color;
             }
@@ -322,6 +358,16 @@ html {
           a {
             color: white;
           }
+
+          @include media-breakpoint-down(xs) {
+            h5 {
+              font-size: 13px;
+            }
+
+            h4 {
+              font-size: 15px;
+            }
+          }
         }
       }
 
@@ -340,13 +386,22 @@ html {
     .card {
       height: calc(100% - 1.5rem);
       margin-bottom: 1.5rem;
+      border-radius: .5rem;
+
+      &-body {
+
+        @include media-breakpoint-down(xs) {
+          padding: .5rem 1rem;
+        }
+      }
 
       &-frame {
         display: block;
+        border-radius: .5rem;
       }
 
       &-img {
-        // height: 225px;
+        min-height: 110px;
         object-fit: cover;
       }
 
@@ -363,6 +418,7 @@ html {
 
         @include media-breakpoint-down(xs) {
           font-size: 11px;
+          @include text-truncate;
         }
       }
 
@@ -373,10 +429,13 @@ html {
         display: -webkit-box;
         -webkit-line-clamp: 3;
         -webkit-box-orient: vertical;
+
         @include media-breakpoint-down(xs) {
           font-size: 10px;
+          margin-bottom: .5rem;
         }
       }
+
       &-date {
         @include media-breakpoint-down(xs) {
           font-size: 10px;
@@ -396,7 +455,7 @@ html {
 
         .card {
           &-img {
-            height: 360px;
+            // height: 360px;
             object-fit: cover;
           }
 
@@ -512,6 +571,7 @@ html {
               @include transition($transition-base);
 
               .card {
+
                 &-title,
                 &-list i {
                   color: white;
@@ -744,6 +804,7 @@ footer {
 }
 
 .search-mobile {
+
   .btn,
   .form-control {
     border: unset;
@@ -815,8 +876,22 @@ body {
     }
   }
 }
+
 @include media-breakpoint-up(xl) {
   .offcanvas-header {
     display: none;
+  }
+}
+
+#footerLink {
+  .card {
+    &-header {
+      background-color: white;
+      color: $body-color;
+
+      &:focus {
+        color: $primary;
+      }
+    }
   }
 }

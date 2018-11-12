@@ -35,7 +35,7 @@
             <div class="container">
                 <button class="navbar-toggler hidden-xl-up" type="button" data-toggle="offcanvas" data-target="#collapsibleNavId"
                     aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-bars fa-2x"></i>
                 </button>
                 <a class="navbar-brand" href="./">
                     <img src="./img/logo.png" alt="" class="d-none d-xl-block">
@@ -46,7 +46,7 @@
                     <div class="offcanvas-header">
                         <button class="navbar-toggler float-right" type="button" data-toggle="offcanvas" data-target="#collapsibleNavId"
                             aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
-                            <i class="fas fa-times"></i>
+                            <i class="fas fa-times fa-2x"></i>
                         </button>
                         <div class="container-fluid">
                             <div class="text-center">
@@ -914,18 +914,6 @@
                             <li><a href="#">ขายแฟลต</a></li>
                         </ul>
                     </div>
-                    <div class="d-lg-none">
-                        <select class="form-control">
-                            <option value="">ประเภททรัพย์</option>
-                            <option value="">ขายบ้านเดี่ยว</option>
-                            <option value="">ขายบ้านแฝด</option>
-                            <option value="">ขายทาวน์เฮ้าส์</option>
-                            <option value="">ขายคอนโด</option>
-                            <option value="">ขายอาคารพาณิชย์</option>
-                            <option value="">ขายที่ดิน</option>
-                            <option value="">ขายแฟลต</option>
-                        </select>
-                    </div>
                 </div>
                 <div class="col-12 col-lg-3">
                     <div class="d-none d-lg-block">
@@ -940,19 +928,6 @@
                             <li><a href="#">ดอนเมือง</a></li>
                             <li><a href="#">คันนายาว</a></li>
                         </ul>
-                    </div>
-                    <div class="d-lg-none">
-                        <select class="form-control">
-                            <option value="">ทำเลที่น่าสนใจในกรุงเทพ</option>
-                            <option value="">ดุสิต</option>
-                            <option value="">บางกอกใหญ่</option>
-                            <option value="">สวนหลวง</option>
-                            <option value="">บางขุนเทียน</option>
-                            <option value="">ลาดกระบัง</option>
-                            <option value="">บึงกุ่ม</option>
-                            <option value="">ดอนเมือง</option>
-                            <option value="">คันนายาว</option>
-                        </select>
                     </div>
                 </div>
                 <div class="col-12 col-lg-3">
@@ -969,18 +944,70 @@
                             <li><a href="#">สระบุรี</a></li>
                         </ul>
                     </div>
-                    <div class="d-lg-none mb-4">
-                        <select class="form-control">
-                            <option value="">ทำเลที่น่าสนใจในต่างจังหวัด</option>
-                            <option value="">ประจวบคีรีขันธ์</option>
-                            <option value="">นครนายก</option>
-                            <option value="">ฉะเชิงเทรา</option>
-                            <option value="">เชียงใหม่</option>
-                            <option value="">เพชรบุรี</option>
-                            <option value="">ลำพูน</option>
-                            <option value="">ปทุมธานี</option>
-                            <option value="">สระบุรี</option>
-                        </select>
+                </div>
+                <div class="col-12 d-lg-none">
+                    <!-- For Mobile -->
+                    <div class="accordion mb-4" id="footerLink">
+                        <div class="card">
+                            <a href="#collapseOne" class="card-header collapsed" id="headingOne" data-toggle="collapse"
+                                aria-expanded="false" aria-controls="collapseOne">
+                                ประเภททรัพย์ <i class="fas fa-chevron-down float-right mt-2"></i>
+                            </a>
+
+                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#footerLink">
+                                <div class="card-body">
+                                    <ul class="list-unstyled">
+                                        <li><a href="#">ขายบ้านเดี่ยว</a></li>
+                                        <li><a href="#">ขายบ้านแฝด</a></li>
+                                        <li><a href="#">ขายทาวน์เฮ้าส์</a></li>
+                                        <li><a href="#">ขายคอนโด</a></li>
+                                        <li><a href="#">ขายอาคารพาณิชย์</a></li>
+                                        <li><a href="#">ขายที่ดิน</a></li>
+                                        <li><a href="#">ขายแฟลต</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <a href="#collapseTwo" class="card-header collapsed" id="headingTwo" data-toggle="collapse"
+                                aria-expanded="false" aria-controls="collapseTwo">
+                                ทำเลที่น่าสนใจในกรุงเทพ <i class="fas fa-chevron-down float-right mt-2"></i>
+                            </a>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#footerLink">
+                                <div class="card-body">
+                                    <ul class="list-unstyled">
+                                        <li><a href="#">ดุสิต</a></li>
+                                        <li><a href="#">บางกอกใหญ่</a></li>
+                                        <li><a href="#">สวนหลวง</a></li>
+                                        <li><a href="#">บางขุนเทียน</a></li>
+                                        <li><a href="#">ลาดกระบัง</a></li>
+                                        <li><a href="#">บึงกุ่ม</a></li>
+                                        <li><a href="#">ดอนเมือง</a></li>
+                                        <li><a href="#">คันนายาว</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <a href="#collapseThree" class="card-header collapsed" id="headingThree" data-toggle="collapse"
+                                aria-expanded="false" aria-controls="collapseThree">
+                                ทำเลที่น่าสนใจในต่างจังหวัด <i class="fas fa-chevron-down float-right mt-2"></i>
+                            </a>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#footerLink">
+                                <div class="card-body">
+                                    <ul class="list-unstyled">
+                                        <li><a href="#">ประจวบคีรีขันธ์</a></li>
+                                        <li><a href="#">นครนายก</a></li>
+                                        <li><a href="#">ฉะเชิงเทรา</a></li>
+                                        <li><a href="#">เชียงใหม่</a></li>
+                                        <li><a href="#">เพชรบุรี</a></li>
+                                        <li><a href="#">ลำพูน</a></li>
+                                        <li><a href="#">ปทุมธานี</a></li>
+                                        <li><a href="#">สระบุรี</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="col-12 col-lg-3">
@@ -1005,6 +1032,7 @@
                     </div>
                 </div>
             </div>
+
         </div>
         <div class="footer-bottom bg-white py-2">
             <div class="container">
