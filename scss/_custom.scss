@@ -38,7 +38,8 @@ html {
 
   &-index {
     @include media-breakpoint-down(lg) {
-      background: transparent url("../img/bg-navbar-mobile.png") no-repeat center top;
+      background: transparent url("../img/bg-navbar-mobile.png") no-repeat
+        center top;
       background-size: cover;
     }
   }
@@ -129,7 +130,6 @@ html {
   z-index: 1;
 
   @include media-breakpoint-down(md) {
-
     .carousel-indicators,
     .carousel-control-prev-icon,
     .carousel-control-next-icon {
@@ -145,12 +145,14 @@ html {
   }
 
   .carousel-control-prev-icon {
-    background: rgba(white, 0.5) url("../img/icon-arrow-left.png") no-repeat center center;
+    background: rgba(white, 0.5) url("../img/icon-arrow-left.png") no-repeat
+      center center;
     background-size: auto 60%;
   }
 
   .carousel-control-next-icon {
-    background: rgba(white, 0.5) url("../img/icon-arrow-right.png") no-repeat center center;
+    background: rgba(white, 0.5) url("../img/icon-arrow-right.png") no-repeat
+      center center;
     background-size: auto 60%;
   }
 }
@@ -216,7 +218,8 @@ html {
 }
 
 .nav-bottom {
-  background: transparent url("../img/bg-nav-bottom.png") no-repeat center center;
+  background: transparent url("../img/bg-nav-bottom.png") no-repeat center
+    center;
   background-size: cover;
   text-align: center;
   padding: 6rem 0;
@@ -253,7 +256,7 @@ html {
       }
 
       p {
-        margin-bottom: .25rem;
+        margin-bottom: 0.25rem;
       }
 
       @include media-breakpoint-down(xs) {
@@ -262,7 +265,7 @@ html {
         }
 
         .card-body {
-          padding: 1rem .5rem;
+          padding: 1rem 0.5rem;
         }
 
         h4 {
@@ -298,7 +301,7 @@ html {
       &-event {
         height: calc(100% - 1.5rem);
         margin-bottom: 1.5rem;
-        border-radius: .5rem;
+        border-radius: 0.5rem;
         overflow: hidden;
 
         .card-img {
@@ -311,7 +314,7 @@ html {
 
           .card {
             &-img {
-              border-radius: .5rem
+              border-radius: 0.5rem;
             }
 
             &-title {
@@ -386,18 +389,17 @@ html {
     .card {
       height: calc(100% - 1.5rem);
       margin-bottom: 1.5rem;
-      border-radius: .5rem;
+      border-radius: 0.5rem;
 
       &-body {
-
         @include media-breakpoint-down(xs) {
-          padding: .5rem 1rem;
+          padding: 0.5rem 1rem;
         }
       }
 
       &-frame {
         display: block;
-        border-radius: .5rem;
+        border-radius: 0.5rem;
       }
 
       &-img {
@@ -432,7 +434,7 @@ html {
 
         @include media-breakpoint-down(xs) {
           font-size: 10px;
-          margin-bottom: .5rem;
+          margin-bottom: 0.5rem;
         }
       }
 
@@ -494,12 +496,27 @@ html {
         object-fit: cover;
 
         &-overlay {
+          position: absolute;
+          top: 210px;
+          background-color: rgba($primary, 0.8);
           display: -ms-flexbox;
           display: flex;
           -ms-flex-direction: column;
           flex-direction: column;
           -ms-flex-pack: justify;
           justify-content: space-between;
+          @include transition($transition-base);
+          .link-share {
+            float: right;
+            color: white;
+            @include hover-focus {
+              opacity: 0.8;
+            }
+          }
+          &:hover {
+            top: 0;
+            @include transition($transition-base);
+          }
         }
       }
 
@@ -529,6 +546,9 @@ html {
         .card {
           &-img {
             &-overlay {
+              position: absolute;
+              top: 0;
+              background-color: unset;
               padding: 2rem;
               display: unset;
               display: unset;
@@ -536,6 +556,9 @@ html {
               flex-direction: unset;
               -ms-flex-pack: unset;
               justify-content: unset;
+              .link-share {
+                float: none;
+              }
             }
           }
 
@@ -571,7 +594,6 @@ html {
               @include transition($transition-base);
 
               .card {
-
                 &-title,
                 &-list i {
                   color: white;
@@ -804,7 +826,6 @@ footer {
 }
 
 .search-mobile {
-
   .btn,
   .form-control {
     border: unset;
