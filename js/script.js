@@ -47,4 +47,48 @@ $(document).ready(function () {
       }
     }]
   });
+
+  // product-detail-slide
+  $(".product-detail-slide").slick({
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 3000,
+  });
+
+  // neighborhoods-slide
+  $('.neighborhoods-slide').slick({
+    dots: true,
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    responsive: [{
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  });
+
+  // collapse
+  $('#collapseCalculated').on('show.bs.collapse', function () {
+    // do something…
+    $('.card-header i').addClass('fa-chevron-up')
+    $('.card-header i').removeClass('fa-chevron-down')
+  })
+  $('#collapseCalculated').on('hide.bs.collapse', function () {
+    // do something…
+    $('.card-header i').addClass('fa-chevron-down')
+    $('.card-header i').removeClass('fa-chevron-up')
+  })
 });

@@ -14,7 +14,8 @@ html {
   }
 }
 
-.btn-primary {
+.btn-primary,
+.bg-success {
   color: color-yiq(theme-color("dark")); // returns `color: #fff`
 }
 
@@ -38,8 +39,7 @@ html {
 
   &-index {
     @include media-breakpoint-down(lg) {
-      background: transparent url("../img/bg-navbar-mobile.png") no-repeat
-        center top;
+      background: transparent url("../img/bg-navbar-mobile.png") no-repeat center top;
       background-size: cover;
     }
   }
@@ -130,6 +130,7 @@ html {
   z-index: 1;
 
   @include media-breakpoint-down(md) {
+
     .carousel-indicators,
     .carousel-control-prev-icon,
     .carousel-control-next-icon {
@@ -145,14 +146,12 @@ html {
   }
 
   .carousel-control-prev-icon {
-    background: rgba(white, 0.5) url("../img/icon-arrow-left.png") no-repeat
-      center center;
+    background: rgba(white, 0.5) url("../img/icon-arrow-left.png") no-repeat center center;
     background-size: auto 60%;
   }
 
   .carousel-control-next-icon {
-    background: rgba(white, 0.5) url("../img/icon-arrow-right.png") no-repeat
-      center center;
+    background: rgba(white, 0.5) url("../img/icon-arrow-right.png") no-repeat center center;
     background-size: auto 60%;
   }
 }
@@ -199,6 +198,7 @@ html {
 
   &-frame {
     position: relative;
+    display: block;
 
     .card-tag {
       position: absolute;
@@ -206,6 +206,7 @@ html {
       bottom: 0;
       font-size: small;
       padding: 0.25rem 1rem;
+      white-space: nowrap;
     }
   }
 }
@@ -218,8 +219,7 @@ html {
 }
 
 .nav-bottom {
-  background: transparent url("../img/bg-nav-bottom.png") no-repeat center
-    center;
+  background: transparent url("../img/bg-nav-bottom.png") no-repeat center center;
   background-size: cover;
   text-align: center;
   padding: 6rem 0;
@@ -506,13 +506,16 @@ html {
           -ms-flex-pack: justify;
           justify-content: space-between;
           @include transition($transition-base);
+
           .link-share {
             float: right;
             color: white;
+
             @include hover-focus {
               opacity: 0.8;
             }
           }
+
           &:hover {
             top: 0;
             @include transition($transition-base);
@@ -556,6 +559,7 @@ html {
               flex-direction: unset;
               -ms-flex-pack: unset;
               justify-content: unset;
+
               .link-share {
                 float: none;
               }
@@ -594,6 +598,7 @@ html {
               @include transition($transition-base);
 
               .card {
+
                 &-title,
                 &-list i {
                   color: white;
@@ -826,6 +831,7 @@ footer {
 }
 
 .search-mobile {
+
   .btn,
   .form-control {
     border: unset;
@@ -914,5 +920,12 @@ body {
         color: $primary;
       }
     }
+  }
+}
+
+// Border
+.border {
+  &-dashed {
+    border-style: dashed;
   }
 }
