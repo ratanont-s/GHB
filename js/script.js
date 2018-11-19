@@ -36,16 +36,9 @@ $(document).ready(function () {
     slidesToScroll: 3
   });
   // Slick
-  $('.card-result .card-img-top').slick({
-    arrows: false,
-    dots: true,
-    responsive: [{
-      breakpoint: 1200,
-      settings: {
-        arrows: true,
-        dots: false
-      }
-    }]
+  $('.card-result .card-img-top, .card-result .card-img').slick({
+    arrows: true,
+    dots: false,
   });
 
   // product-detail-slide
@@ -90,5 +83,10 @@ $(document).ready(function () {
     // do something…
     $('.card-header i').addClass('fa-chevron-down')
     $('.card-header i').removeClass('fa-chevron-up')
+  })
+
+  $('.btn-toggle').on('click', function () {
+    $('i').toggleClass('fa-chevron-down')
+    $('i').toggleClass('fa-chevron-up')
   })
 });

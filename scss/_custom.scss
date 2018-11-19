@@ -1,5 +1,5 @@
 html {
-  font-size: 0.8rem;
+  font-size: 0.7rem;
 }
 
 @include media-breakpoint-up(lg) {
@@ -612,8 +612,23 @@ html {
   }
 }
 
-.text-shadow {
-  text-shadow: 0.1rem 0.1rem 0.25rem rgba(black, 0.5);
+// Text
+.text {
+  &-shadow {
+    text-shadow: 0.1rem 0.1rem 0.25rem rgba(black, 0.5);
+  }
+
+  &-header {
+    margin-top: 1.5rem;
+
+    &-title {
+      color: $primary;
+    }
+
+    &-sub {
+      font-weight: lighter;
+    }
+  }
 }
 
 footer {
@@ -684,7 +699,7 @@ footer {
 
 .page-link {
   border-bottom: 0.25rem solid darken(#ededed, 10%);
-  margin-right: 0.75rem;
+  margin-right: 0.5rem;
   padding: 0.25rem 0.5rem;
 }
 
@@ -778,24 +793,18 @@ footer {
     overflow: hidden;
 
     .slick-prev {
-      left: 25px;
+      left: .5rem;
 
       [dir="rtl"] & {
-        right: 25px;
+        right: .5rem;
       }
     }
 
     .slick-next {
-      right: 25px;
+      right: .5rem;
 
       [dir="rtl"] & {
-        left: 25px;
-      }
-    }
-
-    &-tag {
-      @include media-breakpoint-up(xl) {
-        display: none;
+        left: .5rem;
       }
     }
   }
