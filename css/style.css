@@ -16266,6 +16266,20 @@ body.open-offcanvas::after {
   border-style: dashed;
 }
 
+.breadcrumb {
+  background-color: white;
+  padding: 1rem 0;
+}
+.breadcrumb-item a {
+  color: #0F0F0F;
+}
+.breadcrumb-item a:hover, .breadcrumb-item a:focus {
+  color: #fd8103;
+}
+.breadcrumb-item.active {
+  color: #fd8103;
+}
+
 .page-product-detail {
   padding-bottom: 1.5rem;
   font-weight: lighter;
@@ -16429,6 +16443,68 @@ body.open-offcanvas::after {
     -webkit-transition: none;
     transition: none;
   }
+}
+
+.page-method-buy .col-share {
+  text-align: right;
+}
+.page-method-buy .col-share a img {
+  width: 2rem;
+  height: 2rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 100%;
+  -webkit-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+          box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+@media screen and (prefers-reduced-motion: reduce) {
+  .page-method-buy .col-share a img {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+.page-method-buy .col-share a:hover {
+  opacity: .8;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+@media screen and (prefers-reduced-motion: reduce) {
+  .page-method-buy .col-share a:hover {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+.page-method-buy .col-share a:hover img {
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+@media screen and (prefers-reduced-motion: reduce) {
+  .page-method-buy .col-share a:hover img {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+@media (max-width: 1199.98px) {
+  .page-method-buy .col-img-header {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+.page-method-buy .col-img-header .img-header {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+.page-method-buy .col-img-header .img-header .btn {
+  position: absolute;
+  top: .5rem;
+  left: .5rem;
+}
+.page-method-buy .col-img-header .img-header img {
+  width: 100%;
 }
 
 @media (max-width: 1199.98px) {

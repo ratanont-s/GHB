@@ -938,3 +938,23 @@ body {
     border-style: dashed;
   }
 }
+
+// Breadcrumb
+.breadcrumb {
+  background-color: white;
+  padding: 1rem 0;
+
+  &-item {
+    a {
+      color: $body-color;
+
+      @include hover-focus {
+        color: $primary;
+      }
+    }
+
+    &.active {
+      color: $primary;
+    }
+  }
+}

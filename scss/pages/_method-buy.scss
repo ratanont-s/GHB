@@ -1,0 +1,48 @@
+.page-method-buy {
+    .col-share {
+        text-align: right;
+
+        a {
+            img {
+                width: 2rem;
+                height: 2rem;
+                object-fit: cover;
+                border-radius: 100%;
+                box-shadow: $box-shadow-sm;
+                @include transition($transition-base);
+            }
+
+            &:hover {
+                opacity: .8;
+                @include transition($transition-base);
+
+                img {
+                    box-shadow: $box-shadow;
+                    @include transition($transition-base);
+                }
+            }
+        }
+    }
+
+    .col-img-header {
+        @include media-breakpoint-down(lg) {
+            padding-right: 0;
+            padding-left: 0;
+        }
+
+        .img-header {
+            position: relative;
+            margin-bottom: 1.5rem;
+
+            .btn {
+                position: absolute;
+                top: .5rem;
+                left: .5rem;
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
