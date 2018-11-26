@@ -1,0 +1,657 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>GHB</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Favicon -->
+    <link rel="icon" href="./favicon.ico">
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="navbar-top d-none d-xl-block">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    โทร. 02-645-9000
+                </div>
+                <div class="col-auto">
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item"><a href="#"><i class="fas fa-lock"></i> ล็อกอิน</a></li>|
+                        <li class="list-inline-item"><a href="#">สมัครสมาชิก</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header class="header sticky-top shadow-sm">
+        <nav class="navbar navbar-expand-xl navbar-light">
+            <div class="container">
+                <button class="navbar-toggler hidden-xl-up" type="button" data-toggle="offcanvas" data-target="#collapsibleNavId"
+                    aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars fa-2x"></i>
+                </button>
+                <a class="navbar-brand" href="./">
+                    <img src="./img/logo.png" alt="" class="d-none d-xl-block">
+                    <img src="./img/logo-white.png" alt="" class="d-xl-none">
+                </a>
+                <a href="#" class="d-xl-none"><img src="./img/user.png" alt="" class="img-user"></a>
+                <div class="offcanvas-collapse navbar-collapse" id="collapsibleNavId">
+                    <div class="offcanvas-header">
+                        <button class="navbar-toggler float-right" type="button" data-toggle="offcanvas" data-target="#collapsibleNavId"
+                            aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="fas fa-times fa-2x"></i>
+                        </button>
+                        <div class="container-fluid">
+                            <div class="text-center">
+                                <img src="./img/logo-white.png" class="img-fluid" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="./">บ้านมือสอง <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="./promotion.html">ทรัพย์โปรโมชั่น</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">ขั้นตอนการขอซื้อทรัพย์</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">ข่าว/บทความ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">ติดต่อเรา</a>
+                        </li>
+                        <li class="nav-item d-none d-lg-block">
+                            <a class="nav-link text-primary" href="#"><i class="fas fa-user fa-lg"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+        <!-- ////////////////// -->
+        <!-- Start Main content -->
+        <section class="page page-profile container">
+            <div class="card card-profile">
+                <div class="card-header d-flex align-items-center pt-xl-4 pb-xl-0 px-xl-5">
+                    <div class="text-center">
+                        <img src="./img/Avatar.png" alt="" class="card-img-profile">
+                        <div class="small d-xl-none text-success">รูปประจำตัวของคุณ</div>
+                    </div>
+                    <div class="ml-5">
+                        <h2 class="text-name">อภิษดา รักษ์วงศ์สกุล</h2>
+                        <h5 class="text-address">กรุงเทพมหานคร</h5>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <ul class="nav nav-pills nav-fill" id="profile-tab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link " id="pills-like-tab" data-toggle="pill" href="#pills-like" role="tab"
+                                aria-controls="pills-like" aria-selected="true"><i class="far fa-heart fa-2x"></i>
+                                ทรัพย์ถูกใจ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " id="pills-list-tab" data-toggle="pill" href="#pills-list" role="tab"
+                                aria-controls="pills-list" aria-selected="false"><i class="far fa-star fa-2x"></i>
+                                รายการที่ค้นหาไว้</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" id="pills-booking-tab" data-toggle="pill" href="#pills-booking"
+                                role="tab" aria-controls="pills-booking" aria-selected="false"><i class="fas fa-receipt fa-2x"></i>
+                                จองทรัพย์</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " id="pills-view-tab" data-toggle="pill" href="#pills-view" role="tab"
+                                aria-controls="pills-view" aria-selected="false"><i class="fas fa-home fa-2x"></i>
+                                ขอดูทรัพย์</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " id="pills-info-tab" data-toggle="pill" href="#pills-info" role="tab"
+                                aria-controls="pills-info" aria-selected="false"><i class="far fa-user fa-2x"></i>
+                                ข้อมูลส่วนตัว</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Tab content -->
+            <div class="tab-content" id="profile-tabContent">
+                <div class="tab-pane fade show active" id="pills-booking" role="tabpanel" aria-labelledby="pills-booking-tab">
+                    <h3 class="text-primary mb-4">การจองซื้อทรัพย์</h3>
+                    <!-- บ้านเดี่ยว (พฤกษ์ลดา) -->
+                    <div class="row mb-4">
+                        <div class="col-12 col-xl order-last order-xl-first">
+                            <h3 class="text-primary">บ้านเดี่ยว (พฤกษ์ลดา)</h3>
+                            <ul class="list-inline font-weight-light">
+                                <li>รหัสทรัพย์: <span class="font-weight-normal">2102107651</span></li>
+                                <li>ประเภททรัพย์: <span class="font-weight-normal">บ้านเดี่ยว</span></li>
+                                <li>เลขที่โฉนด/นส3.ก: <span class="font-weight-normal">3497431</span></li>
+                                <li>โครงการ/หมู่บ้าน: <span class="font-weight-normal">พฤกษ์ลดา</span></li>
+                                <li>ราคาทรัพย์: <span class="font-weight-normal">1,600,000 บาท</span></li>
+                                <li><i class="fas fa-map-marker-alt text-primary"></i> ตำบลบ้านฉาง อำเภอบ้านฉาง
+                                    จังหวัดระยอง</li>
+                                <li class="list-inline-item"><i class="fas fa-vector-square text-primary"></i> 38.9
+                                    ตร.ว.</li> |
+                                <li class="list-inline-item"><i class="fas fa-bed text-primary"></i> 4</li> |
+                                <li class="list-inline-item"><i class="fas fa-bath text-primary"></i> 4</li> |
+                                <li class="list-inline-item"><i class="fas fa-home text-primary"></i> จำนวนชั้น: 1 ชั้น</li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-xl-5 order-first order-xl-last">
+                            <div class="shadow mb-4">
+                                <img src="./img/home-01.png" class="w-100 rounded" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ข้อมูลผู้จองทรัพย์ -->
+                    <div class="mb-4">
+                        <h4 class="mb-4 d-flex justify-content-between">ข้อมูลผู้จองทรัพย์ <button type="button" class="btn btn-link"><i
+                                    class="far fa-edit"></i> แก้ไข</button></h4>
+                        <div class="pl-xl-5">
+                            <div class="form-row">
+                                <div class="col-6 form-group">
+                                    <label for="" class="text-primary">ชื่อ *</label>
+                                    <input type="text" readonly class="form-control-plaintext border-bottom pl-xl-4"
+                                        value="ทศพร">
+                                </div>
+                                <div class="col-6 form-group">
+                                    <label for="" class="text-primary">นามสกุล *</label>
+                                    <input type="text" readonly class="form-control-plaintext border-bottom pl-xl-4"
+                                        value="เส็งกิ่ง">
+                                </div>
+                                <div class="col-12 col-xl-6 form-group">
+                                    <label for="" class="text-primary">เลขประจำตัวบัตรประชาชน</label>
+                                    <input type="text" readonly class="form-control-plaintext border-bottom pl-xl-4"
+                                        value="32099001965896">
+                                </div>
+                                <div class="col-12 col-xl-6 form-group">
+                                    <label for="" class="text-primary">เบอร์โทรศัพท์</label>
+                                    <input type="text" readonly class="form-control-plaintext border-bottom pl-xl-4"
+                                        value="098 - 8881272">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ที่อยู่ติดต่อผู้จองซื้อทรัพย์ -->
+                    <div class="mb-4">
+                        <h4 class="mb-4 d-flex justify-content-between">ที่อยู่ติดต่อผู้จองซื้อทรัพย์ <button type="button"
+                                class="btn btn-link"><i class="far fa-edit"></i> แก้ไข</button></h4>
+                        <div class="pl-xl-5">
+                            <div class="form-row">
+                                <div class="col-6 form-group">
+                                    <label for="" class="text-primary">บ้านเลขที่</label>
+                                    <input type="text" readonly class="form-control-plaintext border-bottom pl-xl-4"
+                                        value="199/26">
+                                </div>
+                                <div class="col-6 form-group">
+                                    <label for="" class="text-primary">หมู่ที่</label>
+                                    <input type="text" readonly class="form-control-plaintext border-bottom pl-xl-4"
+                                        value="7">
+                                </div>
+                                <div class="col-6 form-group">
+                                    <label for="" class="text-primary">หมู่บ้าน</label>
+                                    <input type="text" readonly class="form-control-plaintext border-bottom pl-xl-4"
+                                        value="ไกรทองวิลล่า">
+                                </div>
+                                <div class="col-6 form-group">
+                                    <label for="" class="text-primary">ซอย</label>
+                                    <input type="text" readonly class="form-control-plaintext border-bottom pl-xl-4"
+                                        value="ไกรทอง 3">
+                                </div>
+                                <div class="col-6 form-group">
+                                    <label for="" class="text-primary">ถนน</label>
+                                    <input type="text" readonly class="form-control-plaintext border-bottom pl-xl-4"
+                                        value="เกตเวย์ประทุม">
+                                </div>
+                                <div class="col-6 form-group">
+                                    <label for="" class="text-primary">ตำบล / แขวง</label>
+                                    <input type="text" readonly class="form-control-plaintext border-bottom pl-xl-4"
+                                        value="บางตะไนย์">
+                                </div>
+                                <div class="col-6 form-group">
+                                    <label for="" class="text-primary">อำเภอ / เขต</label>
+                                    <input type="text" readonly class="form-control-plaintext border-bottom pl-xl-4"
+                                        value="ปากเกร็ด">
+                                </div>
+                                <div class="col-6 form-group">
+                                    <label for="" class="text-primary">จังหวัด</label>
+                                    <input type="text" readonly class="form-control-plaintext border-bottom pl-xl-4"
+                                        value="นนทบุรี">
+                                </div>
+                                <div class="col-12 col-xl-6 form-group">
+                                    <label for="" class="text-primary">รหัสไปรษณีย์</label>
+                                    <input type="text" readonly class="form-control-plaintext border-bottom pl-xl-4"
+                                        value="11120">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- เงื่อนไขการจองทรัพย์ -->
+                    <div class="mb-4">
+                        <h4 class="mb-4">เงื่อนไขการจองทรัพย์</h4>
+                        <div class="pl-xl-5 d-flex justify-content-between">
+                            <h4 class="font-weight-normal"><span class="text-primary font-weight-light">ราคาเสนอซื้อ :</span>
+                                1,000,000 บาท</h4>
+                            <a href="#" class="btn btn-outline-primary">ดูรายละเอียด</a>
+                        </div>
+                    </div>
+
+                    <!-- การซื้อทรัพย์ -->
+                    <div class="mb-4">
+                        <h4 class="mb-4">การซื้อทรัพย์</h4>
+                        <div class="pl-xl-5">
+                            <div class="row">
+                                <div class="col-12 col-xl-6 form-group align-self-center">
+                                    <div class="custom-control custom-radio">
+                                        <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                                        <label class="custom-control-label" for="customRadio1">เงินสด ชำระงวดเดียว</label>
+                                    </div>
+
+                                </div>
+                                <div class="col-12 col-xl-6 form-group">
+                                    <div class="form-row align-items-center">
+                                        <div class="col-5">
+                                            <div class="custom-control custom-radio">
+                                                <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input"
+                                                    checked>
+                                                <label class="custom-control-label" for="customRadio2">ผ่อนดาวน์</label>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <select class="form-control text-primary">
+                                                <option value="">ดาวน์ 10 % ผ่อน 12 งวด</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-xl-6 form-group">
+                                    <div class="form-row">
+                                        <label for="" class="col-5 text-right text-primary">เงินจอง</label>
+                                        <div class="col">
+                                            <div class="input-group">
+                                                <input type="text" class="form-control text-center" value="10,000">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">บาท</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-xl-6 form-group">
+                                    <div class="form-row">
+                                        <label for="" class="col-5 text-right text-primary">เงินประกันการเข้าอยู่ 1.5%</label>
+                                        <div class="col">
+                                            <div class="input-group">
+                                                <input type="text" class="form-control text-center" value="15,000">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">บาท</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-xl-6 form-group">
+                                    <div class="form-row">
+                                        <label for="" class="col-5 text-right text-primary">เงินดาวน์</label>
+                                        <div class="col">
+                                            <div class="input-group">
+                                                <input type="text" class="form-control text-center" value="100,000">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">บาท</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-xl-6 form-group">
+                                    <div class="form-row">
+                                        <label for="" class="col-5 text-right text-primary">ผ่อนดาวน์</label>
+                                        <div class="col">
+                                            <div class="input-group">
+                                                <input type="text" class="form-control text-center" value="12">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">งวด</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-xl-6 form-group">
+                                    <div class="form-row">
+                                        <label for="" class="col-5 text-right">เงินดาวน์งวดที่ 1</label>
+                                        <div class="col">
+                                            <div class="input-group">
+                                                <input type="text" class="form-control text-center" value="9,900">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">บาท</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-xl-6 form-group">
+                                    <div class="form-row">
+                                        <label for="" class="col-5 text-right">เงินดาวน์งวดที่ 2-12</label>
+                                        <div class="col">
+                                            <div class="input-group">
+                                                <input type="text" class="form-control text-center" value="8,300">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">บาท</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ชำระวันทำสัญญา -->
+                    <div class="mb-4">
+                        <h4 class="mb-4">ชำระวันทำสัญญา</h4>
+                        <div class="form-row justify-content-center mb-4">
+                            <label for="" class="col-auto">จำนวน</label>
+                            <div class="col-auto">
+                                <div class="input-group">
+                                    <input type="text" class="form-control text-center text-primary" value="34,900">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text">บาท</span>
+                                    </div>
+                                </div>
+                                <small>เงินจอง + เงินประกันการเข้าอยู่ 1.5% + เงินดาวน์งวดที่ 1 </small>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <div class="bg-danger card-body text-white d-inline-block px-xl-5 rounded">ติดต่อธนาคารภายในวันที่
+                                : 23
+                                กันยายน
+                                2561</div>
+                        </div>
+                    </div>
+
+                    <!-- หมายเหตุ -->
+                    <div class="mb-4">
+                        <h4 class="mb-4">หมายเหตุ</h4>
+                        <div class="pl-xl-5">
+                            <ul class="list-unstyled">
+                                <li>ข้อมูลทรัพย์สิน, ราคา, เงื่อนไข อาจมีการเปลี่ยนแปลงโดยไม่ต้องแจ้งให้ทราบล่วงหน้า</li>
+                                <li>ค่าพิกัดภูมิศาสตร์เป็นเพียงการระบุตำแหน่งที่ตั้งทรัพย์สินรอการขายเบื้องต้นของธนาคารเท่านั้น
+                                    อาจมีการคลาดเคลื่อนจากสภาพความเป็นจริงได้
+                                    ผู้ซื้อต้องตรวจสอบสภาพสถานที่ตั้งทรัพย์สินด้วยตนเองก่อนซื้อ
+                                </li>
+                                <li>หากทรัพย์สินมีผู้บุกรุกและ/หรือผู้อยู่อาศัย และ/หรือการรอนสิทธิ์
+                                    ผู้เสนอซื้อตกลงรับภาระในการดำเนินการเอง เว้นแต่จะตกลงไว้เป็นอย่างอื่น</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- ทราบข้อมูลทรัพย์สินรอการขายจากสื่อไหน -->
+                    <div class="mb-4">
+                        <h4 class="mb-4">ทราบข้อมูลทรัพย์สินรอการขายจากสื่อไหน</h4>
+                        <div class="pl-xl-5">
+                            <ul class="list-unstyled">
+                                <li class="form-group">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="getInfoCheckbox1">
+                                        <label class="custom-control-label" for="getInfoCheckbox1">เว็บไซต์บ้านมือสองของคนออนไลน์</label>
+                                    </div>
+                                </li>
+                                <li class="form-group">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="getInfoCheckbox2">
+                                        <label class="custom-control-label" for="getInfoCheckbox2">งานมหกรรมจากบูธเครือธนาคารอาคารสงเคราะห์</label>
+                                    </div>
+                                </li>
+                                <li class="form-group">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="getInfoCheckbox3">
+                                        <label class="custom-control-label" for="getInfoCheckbox3">งานขายทรัพย์หน้าสาขา</label>
+                                    </div>
+                                </li>
+                                <li class="form-group">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="getInfoCheckbox4">
+                                        <label class="custom-control-label" for="getInfoCheckbox4">งานสัมนาฝ่ายงานธุรกิจ
+                                            sme / wisdom / homeloan</label>
+                                    </div>
+                                </li>
+                                <li class="form-group">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="getInfoCheckbox5">
+                                        <label class="custom-control-label" for="getInfoCheckbox5">Social Media
+                                            (เฟซบุ๊ค , ไลน์@ , ทวิตเตอร์ , อินสตาแกรม)</label>
+                                    </div>
+                                </li>
+                                <li class="form-group">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="getInfoCheckbox6">
+                                        <label class="custom-control-label" for="getInfoCheckbox6">โบว์ชัวร์ /
+                                            คู่มือทรัพย์</label>
+                                    </div>
+                                </li>
+                                <li class="form-group">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="getInfoCheckbox7">
+                                        <label class="custom-control-label" for="getInfoCheckbox7">ตัวแทนจำหน่ายอิสระภายนอก</label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Button -->
+                    <div class="text-center mb-5">
+                        <button type="button" class="btn btn-primary"><i class="far fa-save"></i> จองทรัพย์</button>
+                        <button type="button" class="btn btn-secondary"><i class="far fa-times-circle"></i>
+                            ยกเลิกจองทรัพย์</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Main content -->
+        <!-- //////////////// -->
+
+        <!-- Nav bottom -->
+        <section class="nav-bottom d-none d-lg-block">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <a href="#">
+                            <img src="./img/icon-map.png" alt="">
+                            <h5>GHBHomecenter.com</h5>
+                            <small>เว็บบ้านมือสองของคนออนไลน์</small>
+                        </a>
+                    </div>
+                    <div class="col-lg-4">
+                        <a href="#">
+                            <img src="./img/icon-search-home.png" alt="">
+                            <h5>ธอส ทำให้คนไทยมีบ้าน</h5>
+                            <small>ตอบโจทย์คนอยากมีบ้าน <br>
+                                ทรัพย์โปรโมชั่นที่คุณไม่ควรพลาด!</small>
+                        </a>
+                    </div>
+                    <div class="col-lg-4">
+                        <a href="#">
+                            <img src="./img/icon-dollar.png" alt="">
+                            <h5>ยื่นกู้ง่าย ดอกเบี้ยถูก คุณก็รู้</h5>
+                            <small>สร้างโอกาสให้คนไทยมีบ้าน สินเชื่อที่อยู่อาศัย <br>
+                                ที่คุณเองก็รู้ "ดอกเบี้ยถูก" </small>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-light">
+        <div class="container py-2 pt-5 py-lg-5">
+            <div class="row">
+                <div class="col-12 col-lg-3">
+                    <div class="d-none d-lg-block">
+                        <h6>ประเภททรัพย์</h6>
+                        <ul class="list-unstyled">
+                            <li><a href="#">ขายบ้านเดี่ยว</a></li>
+                            <li><a href="#">ขายบ้านแฝด</a></li>
+                            <li><a href="#">ขายทาวน์เฮ้าส์</a></li>
+                            <li><a href="#">ขายคอนโด</a></li>
+                            <li><a href="#">ขายอาคารพาณิชย์</a></li>
+                            <li><a href="#">ขายที่ดิน</a></li>
+                            <li><a href="#">ขายแฟลต</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <div class="d-none d-lg-block">
+                        <h6>ทำเลที่น่าสนใจในกรุงเทพ</h6>
+                        <ul class="list-unstyled">
+                            <li><a href="#">ดุสิต</a></li>
+                            <li><a href="#">บางกอกใหญ่</a></li>
+                            <li><a href="#">สวนหลวง</a></li>
+                            <li><a href="#">บางขุนเทียน</a></li>
+                            <li><a href="#">ลาดกระบัง</a></li>
+                            <li><a href="#">บึงกุ่ม</a></li>
+                            <li><a href="#">ดอนเมือง</a></li>
+                            <li><a href="#">คันนายาว</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <div class="d-none d-lg-block">
+                        <h6>ทำเลที่น่าสนใจในต่างจังหวัด</h6>
+                        <ul class="list-unstyled">
+                            <li><a href="#">ประจวบคีรีขันธ์</a></li>
+                            <li><a href="#">นครนายก</a></li>
+                            <li><a href="#">ฉะเชิงเทรา</a></li>
+                            <li><a href="#">เชียงใหม่</a></li>
+                            <li><a href="#">เพชรบุรี</a></li>
+                            <li><a href="#">ลำพูน</a></li>
+                            <li><a href="#">ปทุมธานี</a></li>
+                            <li><a href="#">สระบุรี</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 d-lg-none">
+                    <!-- For Mobile -->
+                    <div class="accordion mb-4" id="footerLink">
+                        <div class="card">
+                            <a href="#collapseOne" class="card-header collapsed" id="headingOne" data-toggle="collapse"
+                                aria-expanded="false" aria-controls="collapseOne">
+                                ประเภททรัพย์ <i class="fas fa-chevron-down float-right mt-2"></i>
+                            </a>
+
+                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#footerLink">
+                                <div class="card-body">
+                                    <ul class="list-unstyled">
+                                        <li><a href="#">ขายบ้านเดี่ยว</a></li>
+                                        <li><a href="#">ขายบ้านแฝด</a></li>
+                                        <li><a href="#">ขายทาวน์เฮ้าส์</a></li>
+                                        <li><a href="#">ขายคอนโด</a></li>
+                                        <li><a href="#">ขายอาคารพาณิชย์</a></li>
+                                        <li><a href="#">ขายที่ดิน</a></li>
+                                        <li><a href="#">ขายแฟลต</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <a href="#collapseTwo" class="card-header collapsed" id="headingTwo" data-toggle="collapse"
+                                aria-expanded="false" aria-controls="collapseTwo">
+                                ทำเลที่น่าสนใจในกรุงเทพ <i class="fas fa-chevron-down float-right mt-2"></i>
+                            </a>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#footerLink">
+                                <div class="card-body">
+                                    <ul class="list-unstyled">
+                                        <li><a href="#">ดุสิต</a></li>
+                                        <li><a href="#">บางกอกใหญ่</a></li>
+                                        <li><a href="#">สวนหลวง</a></li>
+                                        <li><a href="#">บางขุนเทียน</a></li>
+                                        <li><a href="#">ลาดกระบัง</a></li>
+                                        <li><a href="#">บึงกุ่ม</a></li>
+                                        <li><a href="#">ดอนเมือง</a></li>
+                                        <li><a href="#">คันนายาว</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <a href="#collapseThree" class="card-header collapsed" id="headingThree" data-toggle="collapse"
+                                aria-expanded="false" aria-controls="collapseThree">
+                                ทำเลที่น่าสนใจในต่างจังหวัด <i class="fas fa-chevron-down float-right mt-2"></i>
+                            </a>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#footerLink">
+                                <div class="card-body">
+                                    <ul class="list-unstyled">
+                                        <li><a href="#">ประจวบคีรีขันธ์</a></li>
+                                        <li><a href="#">นครนายก</a></li>
+                                        <li><a href="#">ฉะเชิงเทรา</a></li>
+                                        <li><a href="#">เชียงใหม่</a></li>
+                                        <li><a href="#">เพชรบุรี</a></li>
+                                        <li><a href="#">ลำพูน</a></li>
+                                        <li><a href="#">ปทุมธานี</a></li>
+                                        <li><a href="#">สระบุรี</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <div class="row text-center text-lg-left">
+                        <div class="col-6 col-lg-12">
+                            <h6>Follow us</h6>
+                            <ul class="list-inline list-follow-us mb-5">
+                                <li class="list-inline-item"><a href="#" class="btn btn-secondary btn-sm"><i class="fab fa-facebook"></i></a></li>
+                                <li class="list-inline-item"><a href="#" class="btn btn-secondary btn-sm"><i class="fab fa-twitter"></i></a></li>
+                                <li class="list-inline-item"><a href="#" class="btn btn-secondary btn-sm"><i class="fab fa-instagram"></i></a></li>
+                                <li class="list-inline-item"><a href="#" class="btn btn-secondary btn-sm"><i class="fab fa-youtube"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-lg-12">
+                            <h6 class="d-none d-lg-block">App iOS/Andriod</h6>
+                            <ul class="list-unstyled">
+                                <li><a href="#" target="_blank"><img src="./img/appstore.png" class="img-fluid mb-2"
+                                            alt=""></a></li>
+                                <li><a href="#" target="_blank"><img src="./img/googleplay.png" class="img-fluid" alt=""></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="footer-bottom bg-white py-2">
+            <div class="container">
+                <ul class="list-unstyled mb-0 text-center text-lg-right">
+                    <li>© 2018 GHBhomecenter.com. All rights reserved.</li>
+                    <li>ธนาคารอาคารสงเคราะห์ (สำนักงานใหญ่) เลขที่ 63 ถนนพระรามที่ 9 เขตห้วยขวาง กรุงเทพ
+                        มหานคร 10320</li>
+                    <li>โทรศัพท์: 0-2645-9000 โทรสาร: 0-2645-9001 อีเมล : <a href="mailto:crm@ghb.co.th">crm@ghb.co.th</a>
+                        เว็บไซต์ :
+                        <a href="https://www.ghbank.co.th/" target="_blank">www.ghbank.co.th</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- Optional JavaScript -->
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/jquery.parallax.min.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

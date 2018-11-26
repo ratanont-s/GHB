@@ -209,6 +209,25 @@ html {
       white-space: nowrap;
     }
   }
+
+  &-horizontal {
+    flex-direction: row;
+
+    .card {
+      &-img {
+        height: 100%;
+        object-fit: cover;
+
+        &-cover {
+          border-radius: .25rem;
+          min-width: 45%;
+          max-width: 45%;
+          overflow: hidden;
+          background-clip: content-box;
+        }
+      }
+    }
+  }
 }
 
 .block-with-text {

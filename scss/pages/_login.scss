@@ -1,0 +1,56 @@
+.page-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .input {
+        &-user {
+            background: white url('../../img/icon-input-user.png') no-repeat left .75rem center;
+            padding-left: 2.5rem;
+        }
+
+        &-pass {
+            background: white url('../../img/icon-input-pass.png') no-repeat left .75rem center;
+            padding-left: 2.5rem;
+        }
+    }
+
+    .line-or {
+        position: relative;
+        text-align: center;
+        margin: .5rem 0;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            width: 100%;
+            height: 1px;
+            background-color: $gray-600;
+        }
+
+        span {
+            position: relative;
+            background-color: white;
+            color: $gray-600;
+            padding: 0 1rem;
+        }
+    }
+
+    .btn-img {
+        display: block;
+        margin-bottom: .5rem;
+
+        img {
+            width: 100%;
+        }
+
+        @include hover-focus {
+            opacity: .8;
+        }
+    }
+}

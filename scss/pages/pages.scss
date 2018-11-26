@@ -1,6 +1,8 @@
 @import './product-detail';
 @import './product-list';
 @import './method-buy';
+@import './profile';
+@import './product-search-map';
 
 h1,
 h2,
@@ -16,3 +18,5 @@ h5,
         font-size: 1.25rem;
     }
 }
+
+@import './login';

@@ -36,7 +36,7 @@ $(document).ready(function () {
     slidesToScroll: 3
   });
   // Slick
-  $('.card-result .card-img-top, .card-result .card-img').slick({
+  $('.card-result .card-img-top, .card-result .card-img, .card-map-filter .card-img').slick({
     arrows: true,
     dots: false,
   });
@@ -89,4 +89,24 @@ $(document).ready(function () {
     $('i').toggleClass('fa-chevron-down')
     $('i').toggleClass('fa-chevron-up')
   })
+
+  $('#btnEditProfile,#btnCancelEditProfile').on('click', function () {
+    $('#infoProfile').toggleClass('d-none')
+    $('#formProfile').toggleClass('d-none')
+  })
+
+  // $('#searchHomeInput').on('focusin', function () {
+  //   $('.map-search').removeClass('invisible')
+  // })
+  // $('#searchHomeInput').on('focusout', function () {
+  //   $('.map-search').addClass('invisible')
+  // })
+
+  $('#btnHomeFilter').on('focusin', function () {
+    $('.map-filter').removeClass('invisible')
+  })
+  $('#btnHomeFilter').on('focusout', function () {
+    $('.map-filter').addClass('invisible')
+  })
+
 });

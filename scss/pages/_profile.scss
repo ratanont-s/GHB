@@ -1,0 +1,274 @@
+.page-profile {
+    .card {
+        &-profile {
+            border: unset;
+            border-radius: unset;
+            margin-bottom: 1.5rem;
+
+            &:hover {
+                box-shadow: $box-shadow-sm;
+            }
+
+            .card {
+                &-header {
+                    border-radius: unset;
+                    border-bottom: unset;
+                    @include gradient-x($start-color: #FFA32C, $end-color:#FFC400, $start-percent: 0%, $end-percent: 100%);
+                    position: relative;
+
+                    * {
+                        position: relative;
+                    }
+
+                    &:before {
+                        content: '';
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 2rem;
+                        background-color: white;
+                    }
+
+                    .text {
+                        &-name {
+                            color: white;
+                        }
+
+                        &-address {
+                            color: $body-color;
+                            font-weight: lighter;
+                        }
+                    }
+                }
+
+                &-img-profile {
+                    width: 11rem;
+                    height: 11rem;
+                    border-radius: 100%;
+                    object-fit: cover;
+                    box-shadow: $box-shadow;
+                }
+            }
+
+            @include media-breakpoint-down(lg) {
+                margin-right: -15px;
+                margin-left: -15px;
+                box-shadow: unset;
+
+                .card {
+                    &-header {
+                        background-image: unset;
+                        background-color: white;
+                        box-shadow: $box-shadow-sm;
+
+                        &:before {
+                            display: none;
+                        }
+
+                        .text {
+                            &-name {
+                                color: $body-color;
+                            }
+
+                            &-address {
+                                color: $success;
+                            }
+                        }
+                    }
+
+                    &-img-profile {
+                        width: 5rem;
+                        height: 5rem;
+                        box-shadow: $box-shadow-sm;
+                    }
+                }
+            }
+        }
+    }
+
+    #profile {
+        &-tab {
+            &.nav {
+                .nav-link {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 10rem;
+                    color: $body-color;
+                    border: .1rem solid transparent;
+
+                    i {
+                        margin-right: .5rem;
+                    }
+
+                    @include hover-focus {
+                        color: $primary;
+                    }
+
+                    &.active {
+                        background-color: unset;
+                        color: $primary;
+                        border-color: $primary;
+                    }
+                }
+
+                @include media-breakpoint-down(lg) {
+                    border-bottom: 1px solid $gray-500 !important;
+
+                    .nav-link {
+                        flex-direction: column;
+                        height: 100%;
+                        padding: 0.5rem .15rem;
+
+                        i {
+                            margin-right: unset;
+                        }
+
+                        &.active {
+                            border: unset;
+                            position: relative;
+
+                            &::after {
+                                content: '';
+                                position: absolute;
+                                bottom: -1.5px;
+                                left: 0;
+                                width: 100%;
+                                height: 3px;
+                                background-color: $primary;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+
+        &-tabContent {
+            #pills {
+                &-like {
+                    .card {
+                        flex-direction: row;
+                        height: calc(100% - 1.5rem);
+                        margin-bottom: 1.5rem;
+
+                        &-img {
+                            height: 100%;
+                            object-fit: cover;
+                            @include transition($transition-base);
+
+                            @include hover-focus {
+                                opacity: .5;
+                                transform: scale(1.2) rotate(5deg);
+                                @include transition($transition-base);
+                            }
+
+                            &-cover {
+                                border-radius: .25rem;
+                                min-width: 42%;
+                                overflow: hidden;
+                                background-color: $primary;
+                                background-clip: content-box;
+                            }
+
+                        }
+
+                        &-body {
+                            padding: .5rem 1rem;
+                        }
+                    }
+                }
+
+                &-list {
+                    .card {
+                        height: calc(100% - 1.5rem);
+                        margin-bottom: 1.5rem;
+
+                        .tag-list {
+                            .badge {
+                                border: 1px solid;
+                                font-size: .875rem;
+                                font-weight: lighter;
+
+                                &:hover {
+                                    background-color: $primary;
+                                    color: white;
+                                    border-color: $primary;
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+
+                        .btn-del {
+                            color: $body-color;
+
+                            @include hover-focus {
+                                color: $primary;
+                            }
+                        }
+                    }
+                }
+
+                &-booking {
+                    .card {
+                        height: calc(100% - 1.5rem);
+                        margin-bottom: 1.5rem;
+
+                        &-img {
+                            @include transition($transition-base);
+
+                            @include hover-focus {
+                                opacity: .5;
+                                transform: scale(1.2) rotate(5deg);
+                                @include transition($transition-base);
+                            }
+
+                            &-cover {
+                                background-color: $primary;
+                                max-width: 100%;
+                            }
+                        }
+                    }
+
+                    .input-group {
+                        .form-control {
+                            border-top-right-radius: 0.25rem;
+                            border-bottom-right-radius: 0.25rem;
+                        }
+
+                        &-text {
+                            border: unset;
+                            background-color: unset;
+                        }
+                    }
+                }
+
+                &-view {
+                    .card {
+                        height: calc(100% - 1.5rem);
+                        margin-bottom: 1.5rem;
+
+                        &-img {
+                            @include transition($transition-base);
+
+                            @include hover-focus {
+                                opacity: .5;
+                                transform: scale(1.2) rotate(5deg);
+                                @include transition($transition-base);
+                            }
+
+                            &-cover {
+                                background-color: $primary;
+                            }
+                        }
+                    }
+                }
+            }
+
+
+        }
+    }
+
+
+}
